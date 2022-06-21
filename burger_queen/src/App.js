@@ -4,7 +4,7 @@ import '../src/stylesheets/Login.css';
 import '../src/stylesheets/Food.css'
 import { Welcome } from './components/Welcome';
 import { Login } from './components/Login';
-import {Food} from './components/Food';
+import { Food } from './components/Food';
 
 function App() {
   return (
