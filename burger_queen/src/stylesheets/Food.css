@@ -1,0 +1,18 @@
+
+.container-options {
+    display: flex;
+    align-items: center;
+}
+
+.btn-options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-food {
+    background-color: #f03636;
+    border: #fff 2px solid;
+    width: 50vh;
+    margin: 50 px;
+    border-radius: 10px;
+  }
