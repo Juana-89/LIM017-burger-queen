@@ -18,4 +18,4 @@ export function Welcome() {
       </div>
     )}
 
-    setInterval(function(){document.querySelector('.container-welcome').style.display = "none"},5000)
+    setInterval(function(){document.querySelector('.container-welcome').style.display = "none"},7000)
