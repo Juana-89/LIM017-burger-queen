@@ -17,5 +17,4 @@ export function Welcome() {
         </div>
       </div>
     )}
-
-    setInterval(function(){document.querySelector('.container-welcome').style.display = "none"},7000)
+    setTimeout(function(){document.querySelector('.container-welcome').style.display = "none"},7000)
