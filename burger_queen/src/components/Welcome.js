@@ -1,7 +1,16 @@
 import React from 'react';
+import { useAuth } from '../context/authContext';
+//import { useNavigate } from 'react-router-dom';
 
+
+//const navigate = useNavigate();
 export function Welcome() {
-    return (
+
+  const { user } = useAuth()
+  console.log(user)
+
+  return (
+
       <div className='container-welcome'>
 
         {<img className='image-title'
@@ -17,5 +26,6 @@ export function Welcome() {
         </div>
       </div>
     )}
-
-    // setInterval(function(){document.querySelector('.container-welcome').style.display = "none"},5000)
+    // setTimeout(function() {
+    //   navigate('/Login')
+    // },7000)
