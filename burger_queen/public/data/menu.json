@@ -1,6 +1,5 @@
-[
+{ "breakfast" : [
   {
-
   "id": "CAFAME001",
   "nombre": "Café americano",
   "precio": "5",
@@ -26,10 +25,10 @@
   "nombre": "Jugo de frutas natural",
   "precio": "7",
   "img": "https://i.ibb.co/YQqfGJZ/jugo.png"
-},
-
-{
-  "id": "HAMSIM01",
+}
+],
+"dishes": [
+  {"id": "HAMSIM01",
   "nombre": "Hamburguesa simple",
   "precio": "10",
   "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg"
@@ -56,10 +55,10 @@
   "nombre": "Aros de cebolla",
   "precio": "5",
   "img": "https://i.ibb.co/4pRd5Wr/aros-de-cebolla.jpg"
-},
+}
+],
 
-
-{
+"drinks": [{
   "id": "AGU50001",
   "nombre": "Agua 500ml",
   "precio": "5",
@@ -87,3 +86,4 @@
   "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png"
 }
 ]
+}

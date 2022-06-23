@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,7 +10,8 @@ function useBreakfast() {
 		fetch("../../public/data/menu.json")
 		.then(response => response.json())
 		.then(data => {
-			setBreakfast(data)
+			// setBreakfast(data)
+      console.log(data)
 		})
 	}, [])
 
