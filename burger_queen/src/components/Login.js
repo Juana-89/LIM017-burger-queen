@@ -32,7 +32,7 @@ export function Login() {
 
 
  return (
-//  <div>{error && <p>{error}</p>}
+//  <>{error && <p>{error}</p>}
 
 
  <div className='container-login'>
@@ -55,6 +55,4 @@ export function Login() {
     </div>
     </form>
     </div>
-
-    // </div>
     )}
