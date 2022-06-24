@@ -39,7 +39,7 @@ export function Login() {
 
 
  return (
-//  <div>{error && <p>{error}</p>}
+//  <>{error && <p>{error}</p>}
 
 
 
@@ -110,8 +110,6 @@ export function Login() {
     </div>
     </div>
   </div>
-
-
 
 
     )}
