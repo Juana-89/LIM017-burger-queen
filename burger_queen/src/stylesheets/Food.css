@@ -1,7 +1,7 @@
 
 .container-options {
     display: flex;
-    align-items: center;
+    margin: 50%;
 }
 
 .btn-options {
