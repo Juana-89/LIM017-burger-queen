@@ -4,8 +4,13 @@ export function Food() {
     return (
         <div className='container-options'>
             <div className='btn-options'>
-            <input type="button" className="btn-food" value="DESAYUNO"/> <br/> <br />
-            <input type="button" className="btn-food" value="ALMUERZO Y CENA"/>
+            <button className='btn-food'><img src={'https://i.ibb.co/NNxN7kw/bebida-cafe-sandwich.png'} className='img-btn'/> 
+            <p className='p-food'>DESAYUNO</p>
+            </button>
+
+            <button className='btn-food'><img src={'https://i.ibb.co/N13Y4H0/French-fries-hamburger.jpg'} className='img-btn'/> 
+            <p className='p-food'>ALMUERZO Y CENA</p>
+            </button>
             </div>
         </div>
     )

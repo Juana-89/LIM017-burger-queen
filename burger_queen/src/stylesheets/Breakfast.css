@@ -1,3 +1,9 @@
+.show_menues{
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+
 .h1_title, .h2_customer{
   color:#fff;
 }
