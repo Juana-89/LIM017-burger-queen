@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import '../src/stylesheets/Welcome.css';
 import '../src/stylesheets/Login.css';
-import '../src/stylesheets/Food.css';
+import '../src/stylesheets/Food.css'
+import '../src/stylesheets/Breakfast.css'
 import { Welcome } from './components/Welcome';
 import { Login } from './components/Login';
 import { Food } from './components/Food';
+import { Breakfast } from './components/Breakfast';
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/authContext';
 
@@ -16,8 +18,9 @@ function App() {
     <AuthProvider>
     <Routes>
       <Route path="/" element={<Welcome/>}/>
-      <Route path="/Login" element={<Login/>}/>
-      <Route path="/Food" element={<Food/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/food" element={<Food/>}/>
+      <Route path="/breakfast" element={<Breakfast/>}/>
     </Routes>
     </AuthProvider>
     </div>
