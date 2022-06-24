@@ -8,6 +8,7 @@ import { Welcome } from './components/Welcome';
 import { Login } from './components/Login';
 import { Food } from './components/Food';
 import { Breakfast } from './components/Breakfast';
+import { Launch } from './components/Launch';
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/authContext';
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/food" element={<Food/>}/>
       <Route path="/breakfast" element={<Breakfast/>}/>
+      <Route path="/launch" element={<Launch/>}/>
     </Routes>
     </AuthProvider>
     </div>

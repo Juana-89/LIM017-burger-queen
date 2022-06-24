@@ -2,11 +2,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from '../data/menu.json';
 
-export function Breakfast() {
+export function Launch() {
   return (
-    <div className='container-breakfast'>
+    <div className='container-launch'>
       <div className='d-grid gap-3 div_info_customer'>
-      <h1 className='h1_title'>DESAYUNO</h1>
+      <h1 className='h1_title'>ALMUERZO Y CENA</h1>
       <h2 className='h2_customer'>Cliente:</h2>
       <input type='text' className='form-control border-success input_name_customer'></input>
       <h2 className='h2_customer'>Mesa:</h2>
@@ -15,7 +15,8 @@ export function Breakfast() {
 
       <div className="show_menues">
       {
-        Menu && Menu.filter((category =>  category.categoria === "breakfast")).map(product => {
+        Menu && Menu.filter((category =>  category.categoria === "dishes" || category.categoria === "drinks")).map(product => {
+            {console.log(Menu+ "aaaaaaaaaaaa")}
           return (
             <div className="container_products" key={product.id}>
             <button className='btn_cafe btn-primary btn-l pill'>{ product.categoria } <br /> { product.precio } <br />{ product.nombre } <br /> <img className="img_product" src ={ product.img} /></button>
