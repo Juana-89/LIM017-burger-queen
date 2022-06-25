@@ -1,20 +1,37 @@
 /* .container-login{
   margin:60px;
 } */
+.container-login{
+  /* background-color: #fff; */
+  opacity: 0.9;
+  /* border-radius: 10%; */
+  /* width: 60%;
+  height: 60%; */
+  animation: scale-in-hor-left 1s both;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction:  row;
+  flex-wrap: nowrap;
+}
 
 #carouselBurger{
-
   width: 62vw;
   height: 90vh;
   margin-top: 0px;
   margin-left: -540px;
-
 }
-
-.shadow-lg{
+#form_login{
+  width: 39vw;
+  height: 100vh;
+  background-color: #F91F1F;
+  position: absolute;
+  margin-left: 304px;
+}
+/* .shadow-lg{
   width: 350px;
   margin-left: 405px;
-}
+} */
+
 .form-label{
   color: #000;
   opacity: 4;
@@ -29,18 +46,7 @@
   visibility:hidden;
 }
 
-.container-login{
-  /* background-color: #fff; */
-  opacity: 0.9;
-  /* border-radius: 10%; */
-  /* width: 60%;
-  height: 60%; */
-  animation: scale-in-hor-left 1s both;
-  display: flex;
-  justify-content: center;
-  flex-direction:  row;
-  flex-wrap: nowrap;
-}
+
 
 
 
