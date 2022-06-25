@@ -4,14 +4,14 @@
 }
 
   .btn-food {
-      background-image: linear-gradient(to right, #313030 0%, #4e4c4b  51%, #797676  100%);
-      margin: 10px;
+      background-image: linear-gradient(to right, #441003 0%, #78290f  51%, #db5213  100%);
+      margin: 40px;
       padding: 15px 45px;
       text-align: center;
       text-transform: uppercase;
       color: rgb(39, 2, 2);            
       border-radius: 15px;
-      border-color: orangered;
+      border-color: #ffecd1;
       font-weight: bold;
       font-size: 20px;
       border-width: 7px;
@@ -21,10 +21,10 @@
 
     .p-food {
       font-size: 30px;
-      color:orangered;
+      color:#fff;
     }
 
     .img-btn{
-      height:60vh;
-      width: 70vh;
+      height:50vh;
+      width: 60vh;
     }

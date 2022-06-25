@@ -11,7 +11,6 @@ const image2 = require('../img/burger2.jpg');
 const image3 = require('../img/burger3.jpg');
 
 export function Login() {
-  const [show, setShow] = useState(true)
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -33,7 +32,7 @@ export function Login() {
       await login(user.email, user.password);
       navigate('/Food');
     } catch (error) {
-      setError(alert("Correo electrónico o contraseña incorrecta"));
+      setError(error.message);
     }
  };
 
@@ -44,53 +43,37 @@ export function Login() {
 
 
  <div className="container-login">
-
-{/* <div id="carouselBurger">
-<div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="1000">
-    <img src={image1}  alt="Hamburguesa clásica" />
-    </div>
-    </div> */}
     <div id="carousel-images">
-<div id="carouselBurger" className="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+      <div id="carouselBurger" className="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+        <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-    <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="1000">
-    <img src={image1} id="img1" className="d-block" alt="Hamburguesa clásica" />
-    </div>
+        <div className="carousel-inner">
+        <div className="carousel-item active" data-bs-interval="1000"><img src={image1} id="img1" className="d-block" alt="Hamburguesa clásica" /></div>
+        <div className="carousel-item" data-bs-interval="2000"><img src={image2} id="img2" className="d-block" alt="Hamburguesa doble" /></div>
+        <div className="carousel-item" data-bs-interval="3000"><img src={image3} id="img3" className="d-block" alt="Hamburguesa triple" /></div>
+        </div>
 
-    <div className="carousel-item" data-bs-interval="2000">
-    <img src={image2} id="img2" className="d-block" alt="Hamburguesa doble" />
-    </div>
-
-    <div className="carousel-item" data-bs-interval="3000">
-    <img src={image3} id="img3" className="d-block" alt="Hamburguesa triple" />
-    </div>
-    </div>
-
-    <div className="btns-carousel">
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselBurger" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-    </button>
-
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselBurger" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-    </button>
-    </div>
-</div>
+        <div className="btns-carousel">
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselBurger" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselBurger" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+        </button>
+        </div>
+  </div>
 </div>
 
 <div id="form_login">
     <img id="form_img_logo" src={require('../img/font2.png')} />
-    <div id="div_title" className="p-3 mb-2 fw-bold text-white">Ingreso solo de personal autorizado</div>
-<label htmlFor="email" className="form-label">Correo electrónico</label>
+    <div id="div_title" className="p-3 mb-2 fw-bold text-white"><h4 className="h1_title">Ingreso de personal autorizado</h4></div>
+    <label htmlFor="email" className="form-label">Correo electrónico</label>
     <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
@@ -100,33 +83,9 @@ export function Login() {
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
 
-
-    <button type="submit" className="btn btn-warning" id="btn-submit" onClick={() => setShow(true)}>Ingresar</button>
-    <div className= "alert alert-danger d-flex align-items-center" role="alert">
-    {error && <p>{error}</p>}</div>
+    <button type="submit" className="btn" id="btn-submit" onClick={handleSubmit}>Ingresar</button>
+    <div id="div_alert_error" className= "alert alert-danger d-flex align-items-center" role="alert">{error && <p>{error}</p>}</div>
 
 </div>
-
-  </div>
-
-    )}
-
-
-    (function () {
-
-      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-      let forms = document.querySelectorAll('.needs-validation')
-      //Recorremos los forms y evitamos en envío sin validacion
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }else{
-              alert('FORM VALIDADO')
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
+</div>
+)}
