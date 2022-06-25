@@ -23,23 +23,63 @@
 #form_login{
   width: 39vw;
   height: 100vh;
-  background-color: #F91F1F;
+  /* background-image: url('../img/fondo2.jpg'); */
+  background-color: #000;
   position: absolute;
   margin-left: 304px;
+  opacity: 0.9 ;
+  padding: 40px;
 }
 /* .shadow-lg{
   width: 350px;
   margin-left: 405px;
 } */
+#div_title{
 
+  background-image: linear-gradient(to right, #E44D26 0%, #F16529  51%, #E44D26  100%);
+  border-radius: 10px;
+  width:24em;
+}
+#form_img_logo{
+  width: 70%;
+  margin: 10px 40px 20px ;
+
+}
 .form-label{
-  color: #000;
-  opacity: 4;
+  color: #fff;
+
+}
+#email, #password{
+  width:24em;
 }
 #btn-submit {
-  background-color: #F91F1F;
   border: none;
-}
+  background-image: linear-gradient(to right, #e72e00 0%, #F16529  51%, #8f2a10  100%);
+    margin-top: 30px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;            
+    box-shadow: 5px 5px 10px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+ 
+
+  #btn-submit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+  #btn-submit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 
  .alert{
   margin-top: 20px;

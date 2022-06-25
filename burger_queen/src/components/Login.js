@@ -88,8 +88,8 @@ export function Login() {
 </div>
 
 <div id="form_login">
-
-    <div className="p-3 mb-2 bg-primary bg-gradient fw-bold text-white">Login</div>
+    <img id="form_img_logo" src={require('../img/font2.png')} />
+    <div id="div_title" className="p-3 mb-2 fw-bold text-white">Ingreso solo de personal autorizado</div>
 <label htmlFor="email" className="form-label">Correo electrónico</label>
     <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
     <div className="valid-feedback">Campo ingresado</div>
@@ -107,37 +107,7 @@ export function Login() {
 
 </div>
 
-
-  {/* <div className="row">
-    <div className="col">
-    <div className="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
-    <div className="p-3 mb-2 bg-primary bg-gradient fw-bold text-white">Login</div>
-
-    <form className="row g-3 needs-validation" onSubmit={handleSubmit}>
-
-    <div className="form-login">
-    <label htmlFor="email" className="form-label">Correo electrónico</label>
-    <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
-    <div className="valid-feedback">Campo ingresado</div>
-    <div className="invalid-feedback">Debes completar este campo</div>
-    </div>
-
-    <label htmlFor="password" className="form-label">Contraseña</label>
-    <input type="password" name="password" className="form-control" id="password" placeholder="mimamámemima" onChange={handleChange} />
-    <div className="valid-feedback">Campo ingresado</div>
-    <div className="invalid-feedback">Debes completar este campo</div>
-
-    <button type="submit" className="btn btn-warning" id="btn-submit" onClick={() => setShow(true)}>Ingresar</button>
-    <div className= "alert alert-danger d-flex align-items-center" role="alert">
-    {error && <p>{error}</p>}</div>
-
-    </form>
-    </div>
-
-    </div>
-    </div>   */}
   </div>
-//  </div>
 
     )}
 
