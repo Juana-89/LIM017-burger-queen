@@ -166,3 +166,16 @@ body{
 .div_title_total{
   margin-right: 30%;
 }
+
+.btns_deleted_and_send_order{
+  margin: -10% 0 0 63%;
+}
+
+#btn_trash, #btn_send{
+  color: #fffc;
+  margin-right: 24px;
+  background-color: #ff7d00;
+  border-color: #fff12a;
+  font-size: 20px;
+  box-shadow: 5px 5px 4px #eee;
+}

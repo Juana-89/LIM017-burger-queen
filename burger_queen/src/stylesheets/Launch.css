@@ -163,3 +163,17 @@
   .div_title_total1{
     margin-right: 30%;
   }
+
+  .btns_deleted_and_send_order1{
+    margin-top: -70%;
+    margin-left: 63%;
+  }
+  
+  #btn_trash1, #btn_send1{
+    color: #fffc;
+    margin-right: 24px;
+    background-color: #ff7d00;
+    border-color: #fff12a;
+    font-size: 20px;
+    box-shadow: 5px 5px 4px #eee;
+  }

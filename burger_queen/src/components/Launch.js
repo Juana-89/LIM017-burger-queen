@@ -55,6 +55,12 @@ export function Launch() {
     <div className='inp_total1'>0.00</div>
     </div>
     </div>
+
+    <div className="btns_deleted_and_send_order">
+    <button id="btn_trash" className='btn'><i className="icon-trash"></i> Eliminar</button>
+    <button id="btn_send" className='btn'><i className="icon-ok-sign"></i> Enviar</button>
+    </div>
+    
     </div>
   )
 }
