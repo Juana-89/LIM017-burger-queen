@@ -19,7 +19,7 @@ body{
   margin-top: -140px;
   width: 50%;
   flex-wrap: wrap;
-  margin-left: -9%;
+  margin-left: 0.2%;
 }
 
 .container_products{
@@ -34,7 +34,7 @@ body{
   margin-top: 75px;
   width: 250px;
   height: 140px;
-  margin-left: 580px;
+  margin-left: 640px;
   justify-content: space-around;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -106,7 +106,7 @@ body{
  /* justify-content: center;
  align-items: center; */
  margin-top: 0;
- margin-left: 835px;
+ margin-left: 843px;
 }
 
 .icon-off{
@@ -120,7 +120,7 @@ body{
   border-top-right-radius: 20px;
   background-color:#ffecd1;
   margin-top: -54%;
-  margin-left: 45%;
+  margin-left: 50%;
   height: 67vh;
   width: 37vw;
   overflow: auto;
@@ -148,7 +148,7 @@ body{
   border-top: 2px solid #78290f;
   justify-content: right;
   background-color:#ffecd1;
-  margin-left: 45%;
+  margin-left: 50%;
   margin-top: -15%;
   width: 37vw;
   height: 7vh;
