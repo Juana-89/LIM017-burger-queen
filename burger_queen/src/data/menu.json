@@ -17,7 +17,7 @@
 
   {
     "id": "SANJAMQUE003",
-    "nombre": "Sandwich de jamón y queso",
+    "nombre": "Sandwich de jamón",
     "precio": "10",
     "img": "https://i.ibb.co/mhgNhBy/sandwich-de-jamon-y-queso.jpg",
     "categoria": "breakfast"
@@ -25,7 +25,7 @@
 
   {
     "id": "JUGFRUTNAT004",
-    "nombre": "Jugo de frutas natural",
+    "nombre": "Jugo de frutas",
     "precio": "7",
     "img": "https://i.ibb.co/YQqfGJZ/jugo.png",
     "categoria": "breakfast"

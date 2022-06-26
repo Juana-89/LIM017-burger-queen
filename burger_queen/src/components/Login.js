@@ -72,7 +72,7 @@ export function Login() {
 
 <div id="form_login">
     <img id="form_img_logo" src={require('../img/font2.png')} />
-    <div id="div_title" className="p-3 mb-2 fw-bold text-white"><h4 className="h1_title">Ingreso de personal autorizado</h4></div>
+    <div id="div_title" className="p-3 mb-2 fw-bold text-white"><h4 className="h4_title">Ingreso de personal autorizado</h4></div>
     <label htmlFor="email" className="form-label">Correo electrónico</label>
     <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
     <div className="valid-feedback">Campo ingresado</div>
