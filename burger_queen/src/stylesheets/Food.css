@@ -1,18 +1,28 @@
-
-.container-options {
-    display: flex;
-    align-items: center;
+.btn-options{
+  display: flex;
+  flex-direction: row;
 }
-
-.btn-options {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .btn-food {
-    background-color: #f03636;
-    border: #fff 2px solid;
-    width: 50vh;
-    margin: 50 px;
-    border-radius: 10px;
-  }
+  
+.btn-food {
+  background-image: linear-gradient(to right, #441003 0%, #78290f  51%, #db5213  100%);
+  margin: 40px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(39, 2, 2);            
+  border-radius: 15px;
+  border-color: #ffecd1;
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 7px;
+  padding: 0;
+}
+    
+.p-food {
+  font-size: 30px;
+  color:#fff;
+}
+.img-btn{
+  height:50vh;
+  width: 60vh;
+}
