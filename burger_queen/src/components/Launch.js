@@ -47,6 +47,10 @@ export function Launch() {
         </thead>
         <tbody></tbody>
     </table>
+    <div className="btns_deleted_and_send_order1">
+    <button id="btn_trash" className='btn'><i className="icon-trash"></i> Eliminar</button>
+    <button id="btn_send" className='btn'><i className="icon-ok-sign"></i> Enviar</button>
+    </div>
     </div>
     
     <div className='div_table_foot1'>
@@ -56,10 +60,7 @@ export function Launch() {
     </div>
     </div>
 
-    <div className="btns_deleted_and_send_order">
-    <button id="btn_trash" className='btn'><i className="icon-trash"></i> Eliminar</button>
-    <button id="btn_send" className='btn'><i className="icon-ok-sign"></i> Enviar</button>
-    </div>
+
     
     </div>
   )

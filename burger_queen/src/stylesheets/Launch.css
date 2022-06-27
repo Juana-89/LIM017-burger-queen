@@ -112,7 +112,7 @@
   
   .div_select_item_by_customer1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color:#ffecd1;
@@ -165,8 +165,9 @@
   }
 
   .btns_deleted_and_send_order1{
-    margin-top: -70%;
-    margin-left: 63%;
+    position: absolute;
+    margin-top: 34%;
+    margin-left: 10%;
   }
   
   #btn_trash1, #btn_send1{
