@@ -2,30 +2,27 @@
   display: flex;
   flex-direction: row;
 }
-
-  .btn-food {
-      /* background-image: linear-gradient(to right, #242323 0%, #3a3534  51%, #362828  100%); */
-      background-color:#EFB810;
-      margin: 10px;
-      padding: 15px 45px;
-      text-align: center;
-      border-radius: 15px;
-      border-color: rgb(148, 51, 16);
-      font-weight: bold;
-      font-size: 20px;
-      border-width: 7px;
-      padding:0;
-      margin-right:50px;
-    }
-
-    .p-food {
-      font-size: 35px;
-      font-weight: 900;
-      /* color:rgb(80, 25, 5); */
-      color:rgb(148, 51, 16);
-    }
-
-    .img-btn{
-      height:45vh;
-      width: 55vh;
-    }
+  
+.btn-food {
+  background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
+  margin: 40px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(39, 2, 2);            
+  border-radius: 15px;
+  border-color: #ffecd1;
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 7px;
+  padding: 0;
+}
+    
+.p-food {
+  font-size: 30px;
+  color:#fff;
+}
+.img-btn{
+  height:50vh;
+  width: 60vh;
+}

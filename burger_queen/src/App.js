@@ -3,7 +3,8 @@ import './App.css';
 import '../src/stylesheets/Welcome.css';
 import '../src/stylesheets/Login.css';
 import '../src/stylesheets/Food.css'
-import '../src/stylesheets/Breakfast.css'
+import '../src/stylesheets/Breakfast.css';
+import '../src/stylesheets/Launch.css';
 import { Welcome } from './components/Welcome';
 import { Login } from './components/Login';
 import { Food } from './components/Food';

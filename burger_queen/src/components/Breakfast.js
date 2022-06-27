@@ -5,20 +5,28 @@ import Menu from '../data/menu.json';
 export function Breakfast() {
   return (
     <div className='container-breakfast'>
-      <div className='d-grid gap-3 div_info_customer'>
-      <h1 className='h1_title'>DESAYUNO</h1>
-      <h2 className='h2_customer'>Cliente:</h2>
-      <input type='text' className='form-control border-success input_name_customer'></input>
-      <h2 className='h2_customer'>Mesa:</h2>
-      <input type='number' className='form-control border-success input_name_customer'></input>
+    <div id="div_btn_logout">
+     <button id="btn_logout" className='btn btn-danger'><i className="icon-off"></i>Cerrar sesión</button>
+     </div>
+     
+      <div id="div_name_customer" className='d-grid gap-3'>
+      <h4 className='h4_customer'>Cliente:</h4>
+      <input type='text' id="input_customer" className='form-control input_name_customer' required placeholder='Ingresa nombre'></input>
+      <h4 className='h4_customer'>Mesa:</h4>
+      <input type='number' id="input_table" className='form-control input_name_customer' required placeholder='Ingresa # mesa'></input>
       </div>
 
       <div className="show_menues">
-      {
-        Menu && Menu.filter((category =>  category.categoria === "breakfast")).map(product => {
+      {Menu && Menu.filter((category =>  category.categoria === "breakfast")).map(product => {
           return (
             <div className="container_products" key={product.id}>
-            <button className='btn_cafe btn-primary btn-l pill'>{ product.categoria } <br /> { product.precio } <br />{ product.nombre } <br /> <img className="img_product" src ={ product.img} /></button>
+            <button className='btn_breakfast'><img className="img_product" src ={ product.img} /><br/>{ product.nombre } <br/> $ { product.precio }  </button>
+            
+            <div className="div_add_subs">
+            <button className='btn_add'><i className="icon-plus-sign"></i></button>
+            <span className="span_quantity">00</span>
+            <button className='btn_subs'><i className="icon-minus"></i></button>
+            </div>
             </div>
           )
         })
@@ -26,28 +34,34 @@ export function Breakfast() {
       }
 
     </div>
+   
 
-    <button className='btn btn-danger btn_logout'>Cerrar sesión</button>
+    <div className='div_select_item_by_customer'>
+    <table id="table_select_item" class="table table-striped">
+        <thead>
+        <tr>
+        <th className="th_item">Item</th>
+        <th className="th_quantity">Cantidad</th>
+        <th className="th_price">Precio</th>
+        <th className="num"></th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+    
+    <div className='div_table_foot'>
+    <div className='div_title_total'>
+    <h5 className='h5_total'>Total $</h5>
+    <div className='inp_total'>0.00</div>
+    </div>
+    </div>
 
-    <div className='div_select_item_by_client'>
-    <div className='div_item'>Item</div>
-      <div className='div_select_item'>Cafe</div>
-    <div className='div_quantity'>Cantidad</div>
-      <div className='div_select_quantity'>10.00</div>
-    <div className='div_price'>PU</div>
-      <div className='div_select_price'>10.00</div>
-
-
-      <h3 className='h3_subtotal'>Subtotal</h3>
-      <input type='number' className='inp_subtotal'></input>
-      <h3 className='h3_igv'>IGV</h3>
-    <input type='number' className='inp_igv'></input>
-    <h3 className='h3_total'>Total</h3>
-    <input type='number' className='inp_total'></input>
-
-</div>
-
-
+    <div className="btns_deleted_and_send_order">
+    <button id="btn_trash" className='btn'><i className="icon-trash"></i> Eliminar</button>
+    <button id="btn_send" className='btn'><i className="icon-ok-sign"></i> Enviar</button>
+    </div>
+    
     </div>
   )
 }

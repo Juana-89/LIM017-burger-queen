@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #carouselBurger{
 
@@ -29,31 +30,127 @@
 .container-login{
   opacity: 0.9;
   animation: scale-in-hor-left 1s both;
+=======
+.container-login{
+  opacity: 0.9;
+>>>>>>> upstream/views
   display: flex;
-  justify-content: center;
   flex-direction:  row;
   flex-wrap: nowrap;
+  -webkit-animation: scale-in-hor-left 0.8s both;
+  animation: scale-in-hor-left 0.8s both;
 }
 
+<<<<<<< HEAD
 .carouselBurgerDark{
   margin:1em;
   padding:1em;
   float: left;
+=======
+#carouselBurger{
+  width: 62vw;
+  height: 90vh;
+  margin-top: 0px;
+  margin-left: -540px;
+}
+
+#form_login{
+  width: 39vw;
+  height: 100vh;
+  /* background-image: url('../img/fondo2.jpg'); */
+  background-color: #fff;
+  position: absolute;
+  margin-left: 304px;
+  /* opacity: 0.9 ; */
+  padding: 40px;
+}
+
+#div_title{
+  /* background-image: linear-gradient(to right, #ff7d00 0%, #E44D26  100%); */
+  border-radius: 10px;
+  width:24em;
+
+}
+.h4_title{
+  color: #ff7d00 !important;
+}
+#form_img_logo{
+  width: 70%;
+  margin: 10px 40px 20px ;
+}
+
+.form-label{
+  color: #000;
+}
+
+#email, #password, #div_alert_error{
+  width:24em;
+}
+
+#btn-submit {
+  border: none;
+  background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
+  margin-top: 30px;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;            
+  box-shadow: 5px 5px 10px #eee;
+  border-radius: 10px;
+  display: block;
+  width:24em;
+}
+
+#btn-submit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #000;
+  text-decoration: none;
+}
+
+.alert{
+  margin-top: 20px;
+>>>>>>> upstream/views
 }
 
 .form-login{
   padding:25px;
 }
 
+<<<<<<< HEAD
 @keyframes scale-in-hor-left  {
+=======
+@-webkit-keyframes scale-in-hor-left {
+>>>>>>> upstream/views
   0% {
-    transform: scale(0);
-    transform-origin: 50% 0%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
     opacity: 1;
   }
   100% {
-    transform: scale(1);
-    transform-origin: 50% 0%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
     opacity: 1;
   }
 }
+@keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
