@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-/* .container-login{
-  margin:60px;
-} */
->>>>>>> 2d8f66715aa1b06b11801966669d348f624f36c8
 
 #carouselBurger{
 
@@ -34,9 +28,6 @@
 
 .container-login{
   opacity: 0.9;
-  /* border-radius: 10%; */
-  /* width: 60%;
-  height: 60%; */
   animation: scale-in-hor-left 1s both;
   display: flex;
   justify-content: center;
@@ -44,15 +35,11 @@
   flex-wrap: nowrap;
 }
 
-<<<<<<< HEAD
 .carouselBurgerDark{
   margin:1em;
   padding:1em;
   float: left;
 }
-=======
-
->>>>>>> 2d8f66715aa1b06b11801966669d348f624f36c8
 
 .form-login{
   padding:25px;
