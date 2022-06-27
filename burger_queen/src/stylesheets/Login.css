@@ -1,14 +1,30 @@
+<<<<<<< HEAD
+=======
+/* .container-login{
+  margin:60px;
+} */
+>>>>>>> 2d8f66715aa1b06b11801966669d348f624f36c8
+
 #carouselBurger{
-  width:50%;
-  height:50%;
+
+  width: 62vw;
+  height: 90vh;
+  margin-top: 0px;
+  margin-left: -540px;
+
+}
+
+.shadow-lg{
+  width: 350px;
+  margin-left: 405px;
 }
 .form-label{
   color: #000;
   opacity: 4;
 }
 #btn-submit {
-  background-color: #F91F1F;
-  border: none;
+  background-color: #fc3b3b;
+  border:none;
 }
 
  .alert{
@@ -17,11 +33,10 @@
 }
 
 .container-login{
-  /* background-color: #fff; */
   opacity: 0.9;
   /* border-radius: 10%; */
-  width: 50vw;
-  height: 50vw;
+  /* width: 60%;
+  height: 60%; */
   animation: scale-in-hor-left 1s both;
   display: flex;
   justify-content: center;
@@ -29,17 +44,20 @@
   flex-wrap: nowrap;
 }
 
+<<<<<<< HEAD
 .carouselBurgerDark{
   margin:1em;
   padding:1em;
-
   float: left;
 }
+=======
+
+>>>>>>> 2d8f66715aa1b06b11801966669d348f624f36c8
 
 .form-login{
   padding:25px;
-
 }
+
 @keyframes scale-in-hor-left  {
   0% {
     transform: scale(0);

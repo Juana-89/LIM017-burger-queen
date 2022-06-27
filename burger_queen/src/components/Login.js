@@ -45,7 +45,13 @@ export function Login() {
 
  <div className="container-login">
 
-
+{/* <div id="carouselBurger">
+<div className="carousel-inner">
+    <div className="carousel-item active" data-bs-interval="1000">
+    <img src={image1}  alt="Hamburguesa clásica" />
+    </div>
+    </div> */}
+    <div id="carousel-images">
 <div id="carouselBurger" className="carousel carousel-dark slide" data-bs-ride="carousel">
     <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,18 +61,19 @@ export function Login() {
 
     <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="1000">
-    <img src={image1} className="d-block w-100" alt="Hamburguesa clásica" />
+    <img src={image1} className="d-block" alt="Hamburguesa clásica" />
     </div>
 
     <div className="carousel-item" data-bs-interval="2000">
-    <img src={image2} className="d-block w-100" alt="Hamburguesa doble" />
+    <img src={image2} className="d-block" alt="Hamburguesa doble" />
     </div>
 
     <div className="carousel-item" data-bs-interval="3000">
-    <img src={image3} className="d-block w-100" alt="Hamburguesa triple" />
+    <img src={image3} className="d-block" alt="Hamburguesa triple" />
     </div>
     </div>
 
+    <div className="btns-carousel">
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselBurger" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
@@ -76,26 +83,27 @@ export function Login() {
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
     </button>
+    </div>
 </div>
+</div> 
 
 
-
- <div className="row">
+ {/* <div className="row">
     <div className="col">
     <div className="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
-    <div className="p-3 mb-2 bg-primary bg-gradient fw-bold text-white">Login</div>
+    <div className="p-3 mb-2 bg-primary bg-gradient fw-bold text-white" id="btn-login">Login</div>
 
     <form className="row g-3 needs-validation" onSubmit={handleSubmit}>
-    
+
     <div className="form-login">
     <label htmlFor="email" className="form-label">Correo electrónico</label>
-    <input type="email" name="email" className="form-control" id="email" placeholder="Correo electrónico" onChange={handleChange}/>
+    <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
     </div>
 
     <label htmlFor="password" className="form-label">Contraseña</label>
-    <input type="password" name="password" className="form-control" id="password" placeholder="Contraseña" onChange={handleChange} />
+    <input type="password" name="password" className="form-control" id="password" placeholder="mimamámemima" onChange={handleChange} />
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
 
@@ -107,9 +115,9 @@ export function Login() {
     </div>
 
     </div>
-    </div>
+    </div>  */}
   </div>
-
+//  </div>
 
     )}
 

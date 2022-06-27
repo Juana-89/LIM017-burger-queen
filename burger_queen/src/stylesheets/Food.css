@@ -1,31 +1,31 @@
-
 .btn-options{
   display: flex;
   flex-direction: row;
 }
 
   .btn-food {
-      background-image: linear-gradient(to right, #313030 0%, #4e4c4b  51%, #797676  100%);
+      /* background-image: linear-gradient(to right, #242323 0%, #3a3534  51%, #362828  100%); */
+      background-color:#EFB810;
       margin: 10px;
       padding: 15px 45px;
       text-align: center;
-      text-transform: uppercase;
-      color: rgb(39, 2, 2);            
       border-radius: 15px;
-      border-color: orangered;
+      border-color: rgb(148, 51, 16);
       font-weight: bold;
       font-size: 20px;
       border-width: 7px;
-      padding: 0;
-
+      padding:0;
+      margin-right:50px;
     }
 
     .p-food {
-      font-size: 30px;
-      color:orangered;
+      font-size: 35px;
+      font-weight: 900;
+      /* color:rgb(80, 25, 5); */
+      color:rgb(148, 51, 16);
     }
 
     .img-btn{
-      height:60vh;
-      width: 70vh;
+      height:45vh;
+      width: 55vh;
     }
