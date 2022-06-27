@@ -51,47 +51,6 @@ export function Login() {
         <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
 
-<<<<<<< HEAD
-{/* <div id="carouselBurger">
-<div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="1000">
-    <img src={image1}  alt="Hamburguesa clásica" />
-    </div>
-    </div> */}
-    <div id="carousel-images">
-<div id="carouselBurger" className="carousel carousel-dark slide" data-bs-ride="carousel">
-    <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-
-    <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="1000">
-    <img src={image1} className="d-block" alt="Hamburguesa clásica" />
-    </div>
-
-    <div className="carousel-item" data-bs-interval="2000">
-    <img src={image2} className="d-block" alt="Hamburguesa doble" />
-    </div>
-
-    <div className="carousel-item" data-bs-interval="3000">
-    <img src={image3} className="d-block" alt="Hamburguesa triple" />
-    </div>
-    </div>
-
-    <div className="btns-carousel">
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselBurger" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-    </button>
-
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselBurger" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-    </button>
-    </div>
-=======
         <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="1000"><img src={image1} id="img1" className="d-block" alt="Hamburguesa clásica" /></div>
         <div className="carousel-item" data-bs-interval="2000"><img src={image2} id="img2" className="d-block" alt="Hamburguesa doble" /></div>
@@ -109,25 +68,10 @@ export function Login() {
         </button>
         </div>
   </div>
->>>>>>> upstream/views
 </div>
-</div> 
-
-<<<<<<< HEAD
-
- {/* <div className="row">
-    <div className="col">
-    <div className="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
-    <div className="p-3 mb-2 bg-primary bg-gradient fw-bold text-white" id="btn-login">Login</div>
-
-    <form className="row g-3 needs-validation" onSubmit={handleSubmit}>
-
-    <div className="form-login">
-=======
 <div id="form_login">
     <img id="form_img_logo" src={require('../img/font2.png')} />
     <div id="div_title" className="p-3 mb-2 fw-bold text-white"><h4 className="h4_title">Ingreso de personal autorizado</h4></div>
->>>>>>> upstream/views
     <label htmlFor="email" className="form-label">Correo electrónico</label>
     <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
     <div className="valid-feedback">Campo ingresado</div>
@@ -140,39 +84,6 @@ export function Login() {
 
     <button type="submit" className="btn" id="btn-submit" onClick={handleSubmit}>Ingresar</button>
     <div id="div_alert_error" className= "alert alert-danger d-flex align-items-center" role="alert">{error && <p>{error}</p>}</div>
-
-<<<<<<< HEAD
-    </form>
-    </div>
-
-    </div>
-    </div>  */}
-  </div>
-//  </div>
-
-    )}
-
-
-    (function () {
-
-      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-      let forms = document.querySelectorAll('.needs-validation')
-      //Recorremos los forms y evitamos en envío sin validacion
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }else{
-              alert('FORM VALIDADO')
-            }
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
-=======
 </div>
-</div>
+</div> 
 )}
->>>>>>> upstream/views

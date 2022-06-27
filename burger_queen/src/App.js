@@ -22,8 +22,8 @@ function App() {
       <Route path="/" element={<Welcome/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/food" element={<Food/>}/>
-      <Route path="/breakfast" element={<Breakfast/>}/>
-      <Route path="/launch" element={<Launch/>}/>
+      <Route path="/breakfast" element={<Breakfast menu='breakfast'/>}/>
+      <Route path="/launch" element={<Breakfast menu='lunch'/>}/>
     </Routes>
     </AuthProvider>
     </div>

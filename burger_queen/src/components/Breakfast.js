@@ -2,7 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from '../data/menu.json';
 
-export function Breakfast() {
+export function Breakfast({menu}) {
+  console.log(menu);
+  let menuItems = [];
+  if(menu =='breakfast'){
+    menuItems = Menu.filter(menuItem=>menuItem.categoria === 'breakfast');
+  }else{
+      menuItems=Menu.filter(menuItem=>menuItem.categoria ==='dishes'||menuItem.categoria=='drinks');
+    }
   return (
     <div className='container-breakfast'>
     <div id="div_btn_logout">
@@ -17,7 +24,7 @@ export function Breakfast() {
       </div>
 
       <div className="show_menues">
-      {Menu && Menu.filter((category =>  category.categoria === "breakfast")).map(product => {
+      {menuItems.map(product => {
           return (
             <div className="container_products" key={product.id}>
             <button className='btn_breakfast'><img className="img_product" src ={ product.img} /><br/>{ product.nombre } <br/> $ { product.precio }  </button>
