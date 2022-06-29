@@ -2,13 +2,12 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from '../data/menu.json';
 
-export function Breakfast({menu}) {
-  console.log(menu);
+export function Plates(props) {
   let menuItems = [];
-  if(menu =='breakfast'){
-    menuItems = Menu.filter(menuItem=>menuItem.categoria === 'breakfast');
+  if(props ==='breakfast'){
+    menuItems = Menu.filter(menuItem => menuItem.categoria === 'breakfast');
   }else{
-      menuItems=Menu.filter(menuItem=>menuItem.categoria ==='dishes'||menuItem.categoria=='drinks');
+      menuItems = Menu.filter(menuItem => menuItem.categoria === 'dishes' && menuItem.categoria ==='drinks');
     }
   return (
     <div className='container-breakfast'>
