@@ -3,7 +3,7 @@ import { useAuth } from '../context/authContext'
 import { useNavigate } from 'react-router-dom';
 import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import '../../src/stylesheets/Login.css';
 console.log(bootstrap);
 
 const image1 = require('../img/burger1.jpg');
@@ -21,16 +21,17 @@ export function Login() {
   const navigate = useNavigate();
   const [error, setError] = useState('');
   console.log(error)
+
   // Actualizar estado
   const handleChange = ({ target: { name, value } }) =>
   setUser({...user, [name]: value});
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    setError('');
+    //setError('');
     try{
       await login(user.email, user.password);
-      navigate('/Food');
+      navigate('/plates');
     } catch (error) {
       setError(error.message);
     }
@@ -39,8 +40,6 @@ export function Login() {
 
  return (
 //  <>{error && <p>{error}</p>}
-
-
 
  <div className="container-login">
     <div id="carousel-images">

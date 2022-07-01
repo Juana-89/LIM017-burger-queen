@@ -1,0 +1,137 @@
+.container-plates{
+    /*margin-left: 5%;*/
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1vh 1fr;
+    height: 100%;
+    width: 100%;
+    /* overflow: scroll; */
+}
+
+.show_menues{
+  display: flex;
+  /* padding: 8px; */
+  margin-top: 1%;
+  width: 50%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 1%;
+}
+
+.container_products{
+  margin-right: 20px;
+}
+
+.btn_plates{
+  border-radius: 10%;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
+  border: 5px solid;
+  font-weight: bold;     
+  color: #fff;    
+  border-color: #ffecd1;
+  height: 25vmin;
+  width: 22vmin;
+}
+
+.img_product{
+  width:100%;
+  border-radius: 5% 5% 0 0;
+  height: 80%;
+}
+
+.div_select_item_by_customer{
+  display: flex;
+  flex-direction: row;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color:#ffecd1;
+  margin-top: -39%;
+  margin-left: 56%;
+  height: 60vh;
+  width: 37vw;
+  overflow: auto;
+  color: #001524;
+}
+
+#table_select_item{
+  width: 100%;
+  border-bottom: #78290f solid;
+}
+
+.th_item{
+  width: 15vw;
+  text-align: center;
+}
+
+#btn_logout{
+  width: 147px;
+  height: 50px;
+}
+
+.div_table_foot{
+  color: #001524;
+  display: flex;
+  border-top: 2px solid #78290f;
+  justify-content: right;
+  background-color:#ffecd1;
+  margin-left: 56%;
+  margin-top: -10%;
+  width: 37vw;
+  height: 7vh;
+  border-radius: 0 0 10px 10px;
+}
+
+.inp_total{
+  border-radius: 0 0 10px 0;
+  border: none;
+  font-size: 20px;
+  margin-left: 154%;
+  margin-top: -56%;
+}
+
+.div_title_total{
+  margin-right: 30%;
+}
+
+.btns_deleted_and_send_order{
+  margin: -6.5% 0 0 65%;
+}
+
+#btn_trash, #btn_send{
+  color: #fffc;
+  margin-right: 24px;
+  background-color: #ff7d00;
+  border-color: #fff12a;
+  font-size: 20px;
+  box-shadow: 5px 5px 4px #eee;
+}
+
+@media screen and (max-width: 1024px) {
+.show_menues{
+    width: 60%;
+    margin-left: 1%;
+  }
+.btn_plates {
+    height: 26vmin;
+    width: 22vmin;
+}
+
+.div_select_item_by_customer{
+  margin-top: -48%;
+  margin-left: 62%;
+}
+
+.div_table_foot{
+  margin-left: 62%;
+  margin-top: -17%;
+  width: 37vw;
+  height: 7vh;
+  border-radius: 0 0 10px 10px;
+}
+
+.btns_deleted_and_send_order{
+  margin: -11% 0 0 68%;
+}
+}

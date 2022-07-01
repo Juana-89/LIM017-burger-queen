@@ -1,97 +1,58 @@
 [
   {
-    "id": "CAFAME001",
+    "id": "1",
     "nombre": "Café americano",
     "precio": "5",
-    "img": "https://i.ibb.co/DR83Dm5/cafe.jpg",
-    "categoria": "breakfast"
+    "img": "https://i.ibb.co/DR83Dm5/cafe.jpg"
   },
-
+ 
   {
-    "id": "CAFLEC002",
-    "nombre": "Café con leche",
-    "precio": "7",
-    "img": "https://i.ibb.co/HrMvrSb/cafe-con-leche.png",
-    "categoria": "breakfast"
-  },
-
-  {
-    "id": "SANJAMQUE003",
-    "nombre": "Sandwich de jamón",
-    "precio": "10",
-    "img": "https://i.ibb.co/mhgNhBy/sandwich-de-jamon-y-queso.jpg",
-    "categoria": "breakfast"
-  },
-
-  {
-    "id": "JUGFRUTNAT004",
+    "id": "2",
     "nombre": "Jugo de frutas",
     "precio": "7",
-    "img": "https://i.ibb.co/YQqfGJZ/jugo.png",
-    "categoria": "breakfast"
+    "img": "https://i.ibb.co/YQqfGJZ/jugo.png"
   },
 
   {
-    "id": "HAMSIM01",
+    "id": "3",
     "nombre": "Hamburguesa simple",
     "precio": "10",
-    "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg",
-    "categoria":"dishes"
+    "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg"
   },
 
   {
-    "id": "HAMDOB02",
+    "id": "4",
     "nombre": "Hamburguesa doble",
     "precio": "15",
-    "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg",
-    "categoria":"dishes"
+    "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg"
   },
 
   {
-    "id": "PAPFRIT01",
+    "id": "5",
     "nombre": "Papas fritas",
     "precio": "5",
-    "img": "https://i.ibb.co/NtM4QrQ/potato-chips.jpg",
-    "categoria":"dishes"
+    "img": "https://i.ibb.co/NtM4QrQ/potato-chips.jpg"
   },
 
-  {
-    "id": "AROCEB02",
-    "nombre": "Aros de cebolla",
-    "precio": "5",
-    "img": "https://i.ibb.co/hYBSBBq/aros-de-cebolla1.jpg",
-    "categoria":"dishes"
-  },
 
   {
-    "id": "AGU50001",
+    "id": "6",
     "nombre": "Agua 500ml",
     "precio": "5",
-    "img": "https://i.ibb.co/2cLB4R0/agua-500ml.png",
-    "categoria": "drinks"
+    "img": "https://i.ibb.co/2cLB4R0/agua-500ml.png"
   },
-
+ 
   {
-    "id": "AGU75002",
-    "nombre": "Agua 750ml",
-    "precio": "7",
-    "img": "https://i.ibb.co/ZYmNh8k/Agua-750ml.jpg",
-    "categoria": "drinks"
-  },
-
-  {
-    "id": "BEBGASE500",
+    "id": "7",
     "nombre": "Bebida/gaseosa 500ml",
     "precio": "7",
-    "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png",
-    "categoria": "drinks"
+    "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png"
   },
 
   {
-    "id": "BEBGASE750",
+    "id": "8",
     "nombre": "Bebida/gaseosa 750ml",
     "precio": "10",
-    "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png",
-    "categoria": "drinks"
+    "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png"
   }
  ]

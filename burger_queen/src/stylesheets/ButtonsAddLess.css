@@ -1,0 +1,34 @@
+
+.div_add_subs{
+  align-items: center;
+  background-color: #ffecd1;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.6vw;
+  justify-content: space-between;
+  margin-top: -13%;
+  margin-bottom: 14%;
+  margin-left: 28%;
+  width: 50%;
+  height: 15%;
+}
+
+.btn_add{
+  color: #70e000;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.span_quantity{
+  color: #000c
+}
+
+.btn_subs{
+  color: #e5383b;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
