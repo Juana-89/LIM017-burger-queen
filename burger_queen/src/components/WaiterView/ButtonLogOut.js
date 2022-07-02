@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../src/stylesheets/ButtonLogOut.css';
+import '../../stylesheets/WaiterView/ButtonLogOut.css';
 
 export function ButtonLogOut()  {
     return (

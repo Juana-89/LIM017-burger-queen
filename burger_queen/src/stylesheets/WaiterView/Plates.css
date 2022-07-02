@@ -41,58 +41,11 @@
   height: 80%;
 }
 
-.div_select_item_by_customer{
-  display: flex;
-  flex-direction: row;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color:#ffecd1;
-  margin-top: -39%;
-  margin-left: 56%;
-  height: 60vh;
-  width: 37vw;
-  overflow: auto;
-  color: #001524;
-}
 
-#table_select_item{
-  width: 100%;
-  border-bottom: #78290f solid;
-}
-
-.th_item{
-  width: 15vw;
-  text-align: center;
-}
 
 #btn_logout{
   width: 147px;
   height: 50px;
-}
-
-.div_table_foot{
-  color: #001524;
-  display: flex;
-  border-top: 2px solid #78290f;
-  justify-content: right;
-  background-color:#ffecd1;
-  margin-left: 56%;
-  margin-top: -10%;
-  width: 37vw;
-  height: 7vh;
-  border-radius: 0 0 10px 10px;
-}
-
-.inp_total{
-  border-radius: 0 0 10px 0;
-  border: none;
-  font-size: 20px;
-  margin-left: 154%;
-  margin-top: -56%;
-}
-
-.div_title_total{
-  margin-right: 30%;
 }
 
 .btns_deleted_and_send_order{
@@ -118,18 +71,7 @@
     width: 22vmin;
 }
 
-.div_select_item_by_customer{
-  margin-top: -48%;
-  margin-left: 62%;
-}
 
-.div_table_foot{
-  margin-left: 62%;
-  margin-top: -17%;
-  width: 37vw;
-  height: 7vh;
-  border-radius: 0 0 10px 10px;
-}
 
 .btns_deleted_and_send_order{
   margin: -11% 0 0 68%;

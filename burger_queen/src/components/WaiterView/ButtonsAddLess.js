@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../src/stylesheets/ButtonsAddLess.css';
+import '../../stylesheets/WaiterView/ButtonsAddLess.css';
 
 export function ButtonsAddLess()  {
     const [counterState, setCounterState] = useState(0);
@@ -11,7 +11,7 @@ export function ButtonsAddLess()  {
     const handleDecrement = () => {
         setCounterState(counterState - 1);
         if (counterState === 0) {
-            alert('queda en 0')
+            // alert('queda en 0')
             setCounterState(0)
         }
     } 
@@ -23,5 +23,4 @@ export function ButtonsAddLess()  {
         <button className='btn_subs' onClick = {handleDecrement}><i className="icon-minus"></i></button>
         </div>
 )
-
 }

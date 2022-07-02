@@ -1,0 +1,30 @@
+.div_select_item_by_customer{
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color:#ffecd1;
+    margin-top: -39%;
+    margin-left: 56%;
+    height: 60vh;
+    width: 37vw;
+    overflow: auto;
+    color: #001524;
+}
+  
+#table_select_item{
+    width: 100%;
+    border-bottom: #78290f solid;
+}
+  
+.th_item{
+    width: 15vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .div_select_item_by_customer{
+        margin-top: -48%;
+        margin-left: 62%;
+    }
+}

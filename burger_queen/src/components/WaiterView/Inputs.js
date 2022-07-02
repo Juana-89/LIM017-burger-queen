@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../src/stylesheets/Inputs.css';
+import '../../stylesheets/WaiterView/Inputs.css';
 
 export function Inputs()  {
     return (
