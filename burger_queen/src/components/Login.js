@@ -36,13 +36,8 @@ export function Login() {
     }
  };
 
-
- return (
-//  <>{error && <p>{error}</p>}
-
-
-
- <div className="container-login">
+return (
+  <div className="container-login">
     <div id="carousel-images">
       <div id="carouselBurger" className="carousel carousel-dark slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
@@ -50,13 +45,11 @@ export function Login() {
         <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselBurger" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-
         <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="1000"><img src={image1} id="img1" className="d-block" alt="Hamburguesa clásica" /></div>
         <div className="carousel-item" data-bs-interval="2000"><img src={image2} id="img2" className="d-block" alt="Hamburguesa doble" /></div>
         <div className="carousel-item" data-bs-interval="3000"><img src={image3} id="img3" className="d-block" alt="Hamburguesa triple" /></div>
         </div>
-
         <div className="btns-carousel">
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselBurger" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -76,14 +69,13 @@ export function Login() {
     <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
-
     <label htmlFor="password" className="form-label">Contraseña</label>
     <input type="password" name="password" className="form-control" id="password" placeholder="mimamámemima" onChange={handleChange} />
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
-
     <button type="submit" className="btn" id="btn-submit" onClick={handleSubmit}>Ingresar</button>
     <div id="div_alert_error" className= "alert alert-danger d-flex align-items-center" role="alert">{error && <p>{error}</p>}</div>
 </div>
-</div> 
-)}
+</div>
+)
+}
