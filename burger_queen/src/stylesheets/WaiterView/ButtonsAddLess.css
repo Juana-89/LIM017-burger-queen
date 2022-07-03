@@ -15,13 +15,6 @@
   height: 15%;
 }
 
-.btn_add{
-  color: #70e000;
-  background-color: transparent;
-  border: none;
-  font-size: 30px;
-}
-
 .span_quantity{
   color: #000c
 }
@@ -31,4 +24,12 @@
   background-color: transparent;
   border: none;
   font-size: 30px;
+}
+
+.btn_all_elements{
+  color: #15616d;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  margin-left: 10px;
 }

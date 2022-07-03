@@ -4,8 +4,8 @@
     border-top: 2px solid #78290f;
     justify-content: right;
     background-color:#ffecd1;
-    margin-left: 56%;
-    margin-top: -10%;
+    margin-left: 0;
+    /* margin-top: -10%; */
     width: 37vw;
     height: 7vh;
     border-radius: 0 0 10px 10px;

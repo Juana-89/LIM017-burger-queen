@@ -1,58 +1,58 @@
 [
   {
     "id": "1",
-    "nombre": "Café americano",
-    "precio": "5",
+    "name": "Café americano",
+    "price": "5",
     "img": "https://i.ibb.co/DR83Dm5/cafe.jpg"
   },
  
   {
     "id": "2",
-    "nombre": "Jugo de frutas",
-    "precio": "7",
+    "name": "Jugo de frutas",
+    "price": "7",
     "img": "https://i.ibb.co/YQqfGJZ/jugo.png"
   },
 
   {
     "id": "3",
-    "nombre": "Hamburguesa simple",
-    "precio": "10",
+    "name": "Hamburguesa simple",
+    "price": "10",
     "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg"
   },
 
   {
     "id": "4",
-    "nombre": "Hamburguesa doble",
-    "precio": "15",
+    "name": "Hamburguesa doble",
+    "price": "15",
     "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg"
   },
 
   {
     "id": "5",
-    "nombre": "Papas fritas",
-    "precio": "5",
+    "name": "Papas fritas",
+    "price": "5",
     "img": "https://i.ibb.co/NtM4QrQ/potato-chips.jpg"
   },
 
 
   {
     "id": "6",
-    "nombre": "Agua 500ml",
-    "precio": "5",
+    "name": "Agua 500ml",
+    "price": "5",
     "img": "https://i.ibb.co/2cLB4R0/agua-500ml.png"
   },
  
   {
     "id": "7",
-    "nombre": "Bebida/gaseosa 500ml",
-    "precio": "7",
+    "name": "Bebida/gaseosa 500ml",
+    "price": "7",
     "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png"
   },
 
   {
     "id": "8",
-    "nombre": "Bebida/gaseosa 750ml",
-    "precio": "10",
+    "name": "Bebida/gaseosa 750ml",
+    "price": "10",
     "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png"
   }
  ]

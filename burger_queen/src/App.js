@@ -1,11 +1,11 @@
-import React, { useState, Fragment } from 'react';
+import React from 'react';
 import './App.css';
 import { Welcome } from './components/Welcome';
 import { Login } from './components/Login';
-import { ShoppingCart } from './components/WaiterView/ShoppingCart';
+import { WaiterMainView } from './components/WaiterView/WaiterMainView';
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/authContext';
-// import { ButtonsAddLess } from '../src/components/ButtonsAddLess';
+
 function App() {
 
   return (
@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Welcome/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/shopping" element={<ShoppingCart/>}/>
+      <Route path="/waiter" element={<WaiterMainView/>}/>
     </Routes>
     </AuthProvider>
 

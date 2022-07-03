@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../../stylesheets/WaiterView/ButtonsAddLess.css';
 
-export function ButtonsAddLess()  {
+const ButtonsAddLess = ({data, addToCart, delFromCart}) => {
+    let {id,name,price, quantity} = data;
+    
     const [counterState, setCounterState] = useState(0);
 
     const handleIncrement = () => {
@@ -24,3 +26,5 @@ export function ButtonsAddLess()  {
         </div>
 )
 }
+
+export default ButtonsAddLess;

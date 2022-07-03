@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../stylesheets/WaiterView/TableFooter.css';
-
-export function TableFooter({ addition }) {
+ 
+function TableFooter({ addition }) {
     return (
     <div className='div_table_foot'>
     <div className='div_title_total'>
@@ -11,3 +11,5 @@ export function TableFooter({ addition }) {
     </div>
     )
 };
+
+export default TableFooter;
