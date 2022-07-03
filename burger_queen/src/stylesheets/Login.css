@@ -15,8 +15,8 @@
 }
 
 #form_login{
-  width: 39vw;
-  height: 100vh;
+  /* width: 39vw; */
+  height: 110vh;
   /* background-image: url('../img/fondo2.jpg'); */
   background-color: #fff;
   position: absolute;
@@ -107,5 +107,12 @@
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px){
+  #form_login{
+    width: 46vw;
+    margin-left: 100%;
   }
 }

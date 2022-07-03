@@ -1,13 +1,15 @@
 import * as React from "react";
 import { useAuth } from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
+import '../../src/stylesheets/Welcome.css';
 
 export function Welcome() {
   const navigate = useNavigate()
-  setTimeout(function() { navigate('/login')},5000)
+
+
+  
   const { user } = useAuth()
   console.log(user)
-
   return (
 
       <div className='container-welcome'>
@@ -20,8 +22,10 @@ export function Welcome() {
         src={require('../img/burger_load.png')}
         alt='Rico burger'/>}
 
-        <div className='lds-ellipsis loader '>
+        <div className='lds-ellipsis loader'>
         <div></div><div></div><div></div><div></div>
         </div>
+        
+        {setTimeout(function() { navigate('/login')},5000)}
       </div>
     )}

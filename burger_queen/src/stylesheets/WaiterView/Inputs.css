@@ -1,0 +1,35 @@
+#div_name_customer{
+    margin: 5px 10px 20px;
+    width: 50%;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: baseline;
+}
+
+.h4_customer{
+    color:#fff;
+}
+
+#input_customer, #input_table{
+    height: 34px;
+    margin-left: -74px;
+}
+
+#input_table{
+    width: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    #input_customer, #input_table{
+        margin-left: -44px;
+    }
+
+    #input_customer{
+        width: 150px;
+    }
+    
+    #input_table{
+        width: 50px;
+    }
+}

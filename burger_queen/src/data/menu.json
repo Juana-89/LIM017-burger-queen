@@ -1,97 +1,58 @@
 [
   {
-    "id": "CAFAME001",
-    "nombre": "Café americano",
-    "precio": "5",
-    "img": "https://i.ibb.co/DR83Dm5/cafe.jpg",
-    "categoria": "breakfast"
+    "id": "1",
+    "name": "Café americano",
+    "price": "5",
+    "img": "https://i.ibb.co/DR83Dm5/cafe.jpg"
+  },
+ 
+  {
+    "id": "2",
+    "name": "Jugo de frutas",
+    "price": "7",
+    "img": "https://i.ibb.co/YQqfGJZ/jugo.png"
   },
 
   {
-    "id": "CAFLEC002",
-    "nombre": "Café con leche",
-    "precio": "7",
-    "img": "https://i.ibb.co/HrMvrSb/cafe-con-leche.png",
-    "categoria": "breakfast"
+    "id": "3",
+    "name": "Hamburguesa simple",
+    "price": "10",
+    "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg"
   },
 
   {
-    "id": "SANJAMQUE003",
-    "nombre": "Sandwich de jamón",
-    "precio": "10",
-    "img": "https://i.ibb.co/mhgNhBy/sandwich-de-jamon-y-queso.jpg",
-    "categoria": "breakfast"
+    "id": "4",
+    "name": "Hamburguesa doble",
+    "price": "15",
+    "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg"
   },
 
   {
-    "id": "JUGFRUTNAT004",
-    "nombre": "Jugo de frutas",
-    "precio": "7",
-    "img": "https://i.ibb.co/YQqfGJZ/jugo.png",
-    "categoria": "breakfast"
+    "id": "5",
+    "name": "Papas fritas",
+    "price": "5",
+    "img": "https://i.ibb.co/NtM4QrQ/potato-chips.jpg"
+  },
+
+
+  {
+    "id": "6",
+    "name": "Agua 500ml",
+    "price": "5",
+    "img": "https://i.ibb.co/2cLB4R0/agua-500ml.png"
+  },
+ 
+  {
+    "id": "7",
+    "name": "Gaseosa 500ml",
+    "price": "7",
+    "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png"
   },
 
   {
-    "id": "HAMSIM01",
-    "nombre": "Hamburguesa simple",
-    "precio": "10",
-    "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg",
-    "categoria":"dishes"
-  },
-
-  {
-    "id": "HAMDOB02",
-    "nombre": "Hamburguesa doble",
-    "precio": "15",
-    "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg",
-    "categoria":"dishes"
-  },
-
-  {
-    "id": "PAPFRIT01",
-    "nombre": "Papas fritas",
-    "precio": "5",
-    "img": "https://i.ibb.co/NtM4QrQ/potato-chips.jpg",
-    "categoria":"dishes"
-  },
-
-  {
-    "id": "AROCEB02",
-    "nombre": "Aros de cebolla",
-    "precio": "5",
-    "img": "https://i.ibb.co/hYBSBBq/aros-de-cebolla1.jpg",
-    "categoria":"dishes"
-  },
-
-  {
-    "id": "AGU50001",
-    "nombre": "Agua 500ml",
-    "precio": "5",
-    "img": "https://i.ibb.co/2cLB4R0/agua-500ml.png",
-    "categoria": "drinks"
-  },
-
-  {
-    "id": "AGU75002",
-    "nombre": "Agua 750ml",
-    "precio": "7",
-    "img": "https://i.ibb.co/ZYmNh8k/Agua-750ml.jpg",
-    "categoria": "drinks"
-  },
-
-  {
-    "id": "BEBGASE500",
-    "nombre": "Bebida/gaseosa 500ml",
-    "precio": "7",
-    "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png",
-    "categoria": "drinks"
-  },
-
-  {
-    "id": "BEBGASE750",
-    "nombre": "Bebida/gaseosa 750ml",
-    "precio": "10",
-    "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png",
-    "categoria": "drinks"
+    "id": "8",
+    "name": "Gaseosa 750ml",
+    "price": "10",
+    "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png"
   }
  ]
