@@ -15,13 +15,10 @@
 }
 
 #form_login{
-  /* width: 39vw; */
   height: 110vh;
-  /* background-image: url('../img/fondo2.jpg'); */
   background-color: #fff;
   position: absolute;
-  margin-left: 304px;
-  /* opacity: 0.9 ; */
+  margin-left: 320px;
   padding: 40px;
 }
 
@@ -29,6 +26,13 @@
   /* background-image: linear-gradient(to right, #ff7d00 0%, #E44D26  100%); */
   border-radius: 10px;
   width:24em;
+  margin-left: 25px;
+}
+
+#div_alert_error{
+  margin-top: 10px;
+  color: #EF280F;
+  font-weight: bold;
 }
 
 .h4_title{
@@ -36,8 +40,12 @@
 }
 
 #form_img_logo{
-  width: 70%;
+  width: 60%;
   margin: 10px 40px 20px ;
+}
+
+#form_inputs{
+  margin-left: 20px;
 }
 
 .form-label{
