@@ -7,7 +7,6 @@ import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/authContext';
 
 function App() {
-
   return (
 
     
@@ -25,5 +24,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

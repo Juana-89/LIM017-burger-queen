@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import React, { useReducer } from 'react';
 import { orderInitialState, orderReducer} from './orderReducer'
 import { TYPES } from './orderAction';
 import TableRowSelect from './TableRowSelected';
@@ -50,7 +50,7 @@ export const WaiterMainView = () => {
     <TableFooter/>
     </div>
     
-    <div className="btns_deleted_and_send_order">   
+    <div className="btns_deleted_and_send_order">
     <button id="btn_trash" onClick={clearOrder} className='btn'><i className="icon-trash"></i> Eliminar</button>
     <button id="btn_send" className='btn'><i className="icon-ok-sign"></i> Enviar</button>
     </div>

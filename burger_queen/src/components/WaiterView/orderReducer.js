@@ -1,3 +1,4 @@
+import React from 'react';
 import { TYPES } from './orderAction';
 import products from '../../data/menu.json';
 

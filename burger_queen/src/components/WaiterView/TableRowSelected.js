@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../stylesheets/WaiterView/ButtonsAddLess.css';
 
 const TableRowSelect = ({data,delFromOrder}) => {

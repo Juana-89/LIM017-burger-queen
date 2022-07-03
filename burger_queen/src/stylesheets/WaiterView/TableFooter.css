@@ -1,10 +1,9 @@
 .div_table_foot{
     color: #001524;
-    display: flex;
+    /* display: flex; */
     border-top: 2px solid #78290f;
     justify-content: right;
     background-color:#ffecd1;
-    margin-left: 0;
     /* margin-top: -10%; */
     width: 37vw;
     height: 7vh;
@@ -21,6 +20,11 @@
   
 .div_title_total{
     margin-right: 30%;
+}
+
+.h5_total{
+    text-align: center;
+
 }
 
 @media screen and (max-width: 1024px) {

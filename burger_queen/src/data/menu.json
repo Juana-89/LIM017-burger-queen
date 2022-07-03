@@ -44,14 +44,14 @@
  
   {
     "id": "7",
-    "name": "Bebida/gaseosa 500ml",
+    "name": "Gaseosa 500ml",
     "price": "7",
     "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png"
   },
 
   {
     "id": "8",
-    "name": "Bebida/gaseosa 750ml",
+    "name": "Gaseosa 750ml",
     "price": "10",
     "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png"
   }
