@@ -31,7 +31,7 @@ export function Login() {
     //setError('');
     try{
       await login(user.email, user.password);
-      navigate('/plates');
+      navigate('/waiter');
     } catch (error) {
       setError(error.message);
     }
@@ -67,6 +67,7 @@ export function Login() {
   </div>
 </div>
 <div id="form_login">
+    <form id= "form_inputs">
     <img id="form_img_logo" src={require('../img/font2.png')} />
     <div id="div_title" className="p-3 mb-2 fw-bold text-white"><h4 className="h4_title">Ingreso de personal autorizado</h4></div>
     <label htmlFor="email" className="form-label">Correo electrónico</label>
@@ -78,7 +79,9 @@ export function Login() {
     <div className="valid-feedback">Campo ingresado</div>
     <div className="invalid-feedback">Debes completar este campo</div>
     <button type="submit" className="btn" id="btn-submit" onClick={handleSubmit}>Ingresar</button>
-    <div id="div_alert_error" className= "alert alert-danger d-flex align-items-center" role="alert">{error && <p>{error}</p>}</div>
+    <div id="div_alert_error">{error && <p>{error}</p>}</div>
+    </form>
+
 </div>
 </div>
 )
