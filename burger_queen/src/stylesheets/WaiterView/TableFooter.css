@@ -25,13 +25,12 @@
 
 .h5_total{
     text-align: center;
-
 }
 
 @media screen and (max-width: 1024px) {
     .div_table_foot{
         margin-left: 62%;
-        margin-top: -17%;
+        margin-top: 0%;
         width: 37vw;
         height: 7vh;
         border-radius: 0 0 10px 10px;

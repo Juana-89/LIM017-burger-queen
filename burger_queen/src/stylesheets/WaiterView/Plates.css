@@ -53,19 +53,15 @@
 
 @media screen and (max-width: 1024px) {
   .container-plates{
-    /* margin-left: -85%; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    margin-left: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-/* .show_menues{
-    width: 40%;
-    /* margin-left: 140%; */
 
 .btn_plates {
-    height: 20vmin;
-    width: 18vmin;
+    height: 30vmin;
+    width: 22vmin;
 }
-
 
 .btns_deleted_and_send_order{
   margin: -11% 0 0 68%;

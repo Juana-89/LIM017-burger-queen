@@ -41,7 +41,10 @@
   
 @media screen and (max-width: 1024px) {
     .div_select_item_by_customer{
-        margin-top: -64%;
+        margin-top: -47%;
         margin-left: 62%;
+    }
+    #btn_trash, #btn_send{
+        margin: -75px auto 0 75px;
     }
 }
