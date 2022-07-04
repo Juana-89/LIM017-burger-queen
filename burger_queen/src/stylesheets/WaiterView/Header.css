@@ -1,0 +1,29 @@
+#div_btn_header{
+    display:flex;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.h3-title{
+    color: #fff;
+    /* margin-left: 12px; */
+}
+
+.icon-off{
+    margin-right: 4px;
+}
+
+.img-logo{
+    width: 10%;
+    height: 10%;
+}
+
+#btn_logout{
+    margin-left: 48em;
+}
+
+@media screen and (max-width: 1024px) {
+    #btn_logout{
+        margin-left: 32em;
+    }
+}

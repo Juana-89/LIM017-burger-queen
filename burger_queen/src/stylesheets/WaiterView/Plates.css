@@ -1,0 +1,69 @@
+.container-plates{
+    margin: -10px 64px;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* height: 100%; */
+    width: 40%;
+    /* overflow: scroll; */
+}
+
+.show_menues{
+  margin-top: 1%;
+  width: 50%;
+  margin-left: 28px;
+}
+
+.container_products{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_plates{
+  border-radius: 10%;
+  background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
+  border: 5px solid;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  border-color: #ffecd1;
+  height: 29vmin;
+  width: 24vmin;
+  margin-right:-15px;
+}
+
+.img_product{
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 5% 5% 0 0;
+  height: 75%;
+  width: 100%;
+}
+
+.btn_add{
+  color: #70e000;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top:-5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-plates{
+    margin-left: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+.btn_plates {
+    height: 30vmin;
+    width: 22vmin;
+}
+
+.btns_deleted_and_send_order{
+  margin: -11% 0 0 68%;
+}
+}
