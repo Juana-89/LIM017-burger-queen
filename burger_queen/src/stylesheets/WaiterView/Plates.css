@@ -1,13 +1,11 @@
 .container-plates{
-    margin-left: 14px;
+    margin: -10px 64px;
     display: grid;
     gap: 1%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     /* height: 100%; */
     width: 40%;
-    justify-items: start;
-    align-items: start;
     /* overflow: scroll; */
 }
 
@@ -31,15 +29,17 @@
   font-size: 15px;
   color: #fff;
   border-color: #ffecd1;
-  height: 28vmin;
-  width: 25vmin;
+  height: 29vmin;
+  width: 24vmin;
   margin-right:-15px;
 }
 
 .img_product{
-  width:90%;
+  object-fit: cover;
+  object-position: center center;
   border-radius: 5% 5% 0 0;
-  height: 60%;
+  height: 75%;
+  width: 100%;
 }
 
 .btn_add{

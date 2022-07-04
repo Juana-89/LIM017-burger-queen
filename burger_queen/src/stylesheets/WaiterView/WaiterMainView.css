@@ -10,11 +10,11 @@
     width: 37vw;
     overflow: auto;
     color: #001524; 
+    border-bottom: #78290f solid;
 }
   
 #table_select_item{
     width: 100%;
-    border-bottom: #78290f solid;
 }
   
 .th_item{
@@ -22,6 +22,9 @@
     text-align: center;
 }
 
+#tr_header_table{
+    border-bottom: #001524 solid;
+}
 .btns_deleted_and_send_order{
     margin: 5% 0 0 60%;
   }
@@ -33,9 +36,7 @@
     border-color: #fff12a;
     font-size: 20px;
     box-shadow: 5px 5px 4px #eee;
-    margin-top: -65px;
-    margin-left: 55px;
-    margin-right:-12px;
+    margin: -105px auto 0 75px;
   }
   
 @media screen and (max-width: 1024px) {

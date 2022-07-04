@@ -15,14 +15,14 @@
 
   {
     "id": "3",
-    "name": "Hamburguesa simple",
+    "name": "Sandwich simple",
     "price": "10",
     "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg"
   },
 
   {
     "id": "4",
-    "name": "Hamburguesa doble",
+    "name": "Sandwich doble",
     "price": "15",
     "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg"
   },
