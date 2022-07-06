@@ -5,15 +5,10 @@ import '../../src/stylesheets/Welcome.css';
 
 export function Welcome() {
   const navigate = useNavigate()
-
-
-  
   const { user } = useAuth()
   console.log(user)
   return (
-
       <div className='container-welcome'>
-
         {<img className='image-title'
         src={require('../img/font1.png')}
         alt='Rico burger'/>}
