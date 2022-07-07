@@ -33,8 +33,8 @@ export function orderReducer(state, action) {
         }
         
         case TYPES.CLEAR_ORDER:
-        return orderInitialState;        
+        return orderInitialState;
         default:
         return state;
-    }
-}
+        }
+        }

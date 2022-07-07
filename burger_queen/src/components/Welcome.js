@@ -6,8 +6,6 @@ import '../../src/stylesheets/Welcome.css';
 export function Welcome() {
   const navigate = useNavigate()
 
-
-  
   const { user } = useAuth()
   console.log(user)
   return (

@@ -40,7 +40,6 @@ export function Plates(props) {
       }
 
     </div>
-   
 
     <div className='div_select_item_by_customer'>
     <table id="table_select_item" class="table table-striped">
