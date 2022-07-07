@@ -7,6 +7,7 @@ import Header from './Header';
 import Plates from './Plates';
 import TableHeader from './TableHeader';
 import TableFooter from './TableFooter';
+import { addOrder } from '../../firebase/orders';
 import '../../stylesheets/WaiterView/WaiterMainView.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,6 +32,15 @@ export const WaiterMainView = () => {
     dispatch({type: TYPES.CLEAR_ORDER})
     }
 
+    const sumatoria = () => {
+        dispatch({type: TYPES.ADITION_TOTAL_ORDER})
+    }
+
+    const enviarOrden = () => {
+        console.log(order, "aaaaaaaaaaaaaa")
+        addOrder(order)
+        
+    }
     return (
     <div>
     <Header/>
@@ -46,12 +56,15 @@ export const WaiterMainView = () => {
     <TableHeader/>
     {order.map((item, index) => (
     <TableRowSelect key={index} data={item} delFromOrder={delFromOrder}/>))}
+
     </table>
     </div>
     <TableFooter/>
+
     <div className="btns_deleted_and_send_order">
     <button id="btn_trash" onClick={clearOrder} className='btn'><i className="icon-trash"></i> Eliminar</button>
-    <button id="btn_send" className='btn'><i className="icon-ok-sign"></i> Enviar</button>
+    <button id="btn_send" className='btn' onClick={enviarOrden}><i className="icon-ok-sign"></i>Enviar</button>
+   
     </div>
 
     </div>

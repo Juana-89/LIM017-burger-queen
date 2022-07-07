@@ -1,4 +1,3 @@
-import React from 'react';
 import { TYPES } from './orderAction';
 import products from '../../data/menu.json';
 
@@ -32,6 +31,21 @@ export function orderReducer(state, action) {
         }
         }
         
+        case TYPES.ADITION_TOTAL_ORDER:{
+
+           // return state.order.quantity.reduce((acc, curr)=> acc + parseInt(curr.price), 0)
+
+           let newItem = state.products.find(
+            (product) => product.id === action.payload);
+
+            let itemInOrder = state.order.find(item => item.id === newItem.id)
+            return itemInOrder ? {
+            ...state,
+            order: state.order.map(item => item.id === newItem.id ?  {...item, quantity: item.quantity + 1}: item),
+            }:{...state, order: [...state.order,{...newItem, quantity: 1}]}
+
+            }
+
         case TYPES.CLEAR_ORDER:
         return orderInitialState;
         default:
