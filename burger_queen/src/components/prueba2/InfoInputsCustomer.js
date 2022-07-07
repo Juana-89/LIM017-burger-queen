@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../stylesheets/WaiterView/Inputs.css';
 
-function Inputs({customer, setCustomer, table, setTable})  {
+function InfoInputsCustomer({customer, setCustomer, table, setTable})  {
     return (
         <div id="div_name_customer" className='d-grid gap-3'>
         <h4 className='h4_customer'>Cliente:</h4>
@@ -11,4 +11,4 @@ function Inputs({customer, setCustomer, table, setTable})  {
         </div>
       )
 }
-export default Inputs;
+export default InfoInputsCustomer;

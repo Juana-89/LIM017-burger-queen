@@ -1,26 +1,12 @@
-import React from 'react';
-import { useCart } from 'react-use-cart';
-import data from './data';
+import React, { useState } from 'react';
 
-const Cart = () => {
-    const {
-        isEmpty,
-        totalUniqueItems,
-        items,
-        totalItems,
-        cartTotal,
-        updateItemQuantity,
-        removeItem,
-        emptyCart,
-    } = useCart();
-    if (isEmpty) return <h1 className='text-center'> You cart is Empty</h1>
-
-
+function Cart() {
+    const [item, setItem ] = useState([]);
+    
     return(
         <section className='py-4 container'>
         <div className='row justify-content-center'>
         <div className='col-12'>
-            <h5>Cart ({totalUniqueItems}) total Items: ({totalItems})</h5>
             <table className='table table-light table-hover m-0'>
             <tbody>
             {items.map((item, index) => {
@@ -58,4 +44,3 @@ const Cart = () => {
         </section>
     );
 };
-export default Cart;
