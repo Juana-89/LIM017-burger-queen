@@ -92,13 +92,13 @@ animation:tracking-in-expand 2s ease-in both
   -webkit-animation:tracking-in-expand 5s ease-in both;
   animation:tracking-in-expand 8s ease-in both;
   animation: fade-out 10s;
-  margin-left: 245px;
+  margin-left: 355px;
   margin-top:-9%;
 }
 
 @media (min-width: 768px){
   .loader{
-    margin-left: 145px;
+    margin-left: 194px;
     margin-top:-14%;
   }
 }

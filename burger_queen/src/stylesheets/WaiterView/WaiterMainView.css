@@ -4,7 +4,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color:#ffecd1;
-    margin-top: -36%;
+    margin-top: -30%;
     margin-left: 58%;
     height: 60vh;
     width: 37vw;
@@ -14,6 +14,7 @@
 }
   
 #table_select_item{
+    font-size: 20px;
     width: 100%;
 }
   

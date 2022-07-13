@@ -1,7 +1,7 @@
 .container-plates{
-    margin: -10px 64px;
+    margin: -11px 64px;
     display: grid;
-    gap: 1%;
+    gap: 3%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     /* height: 100%; */
@@ -19,6 +19,7 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .btn_plates{
@@ -40,15 +41,6 @@
   border-radius: 5% 5% 0 0;
   height: 75%;
   width: 100%;
-}
-
-.btn_add{
-  color: #70e000;
-  background-color: transparent;
-  border: none;
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top:-5px;
 }
 
 @media screen and (max-width: 1024px) {

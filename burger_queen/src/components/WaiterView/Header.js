@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../stylesheets/WaiterView/Header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const logo = require('../../img/font1.png')
 

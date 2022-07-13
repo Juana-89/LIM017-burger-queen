@@ -1,17 +1,76 @@
-import React from 'react';
+import SidebarLunch from './PriceLunch'
+import Header from "./Header";
+import Inputs  from './Inputs';
+import { Link } from 'react-router-dom'
+import menu from '../../data/menu.json';
+import { useState } from 'react'
 import '../../stylesheets/WaiterView/Plates.css';
-import '../../stylesheets/WaiterView/ButtonsAddLess.css';
 
-const Plates = ({data, addToOrder}) => {
-    let { id,name,img, price } = data;
-    return (
-        <div className="show_menues">
-        <div className="container_products">
-        <button className='btn_plates'><img className="img_product" src ={ img} /><br/>{ name }<br/> $ { price }</button>
-        <button className='btn_add' onClick={() => addToOrder(id)}><i id= 'ico-plus' className="icon-plus-sign"></i></button>
-        </div>
-        </div>
-    )
-};
 
-export default Plates;
+export const Plates = () => {
+
+  const [newName, setNewName] = useState(""); 
+  const [cartItems, setCartItems] = useState([]);
+    const addItem = (item) => {
+        const exist = cartItems.find((x) => x.id === item.id)
+        if(exist) {
+          setCartItems(cartItems.map((x) => x.id === item.id ? {...exist, qty: exist.qty + 1} : x)         );
+        } else {
+          setCartItems([...cartItems, {...item, qty: 1}])
+        }
+      };
+      const removeItem = (item) => {
+         const exist = cartItems.find((x) => x.id === item.id);
+         if(exist.qty === 1) {
+           setCartItems(cartItems.filter((x) => x.id !== item.id));
+         } else {
+          setCartItems(cartItems.map((x) => 
+          x.id === item.id ? {...exist, qty: exist.qty - 1} : x
+            )
+          );
+         }
+      }
+
+      const handleChangeName =(value)=>{
+        setNewName(value);
+        
+    
+      }
+  return (
+    <>
+       <Header />
+       <Inputs handleChangeName={handleChangeName} newName={newName}/>
+       <div className='container-plates'> 
+       
+       {menu.lunch.map((item) => {
+        return (
+          <div className="show_menues">
+          <div className="container_products">
+          <button className='btn_plates' key={item.id} onClick={() => addItem(item)}>
+          <img className="img_product" src ={ item.img} /><br/>{ item.name }<br/> $ { item.price }
+          </button> 
+          </div>
+          </div>
+          )
+        })}
+        
+       
+        </div>
+        {/* <Link to="/" className='back'>Return</Link>
+        <Link to="/orders" className="ordersBtn">
+          Orders
+        </Link> */}
+        
+        
+        <div className='sideBar'>
+            <SidebarLunch
+            addItem={addItem}
+            removeItem={removeItem}
+            cartItems={cartItems} 
+            newName={newName}/>
+        </div>
+  
+    
+    </>
+  )
+}
