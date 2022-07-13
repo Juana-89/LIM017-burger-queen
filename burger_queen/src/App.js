@@ -1,29 +1,27 @@
-import React from 'react';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { WaiterMainView } from './components/WaiterView/WaiterMainView';
 import { Welcome } from './components/Welcome';
 import { Login } from './components/Login';
-import { WaiterMainView } from './components/WaiterView/WaiterMainView';
-import { Routes, Route } from 'react-router-dom';
+import { Plates } from "./components/WaiterView/Plates";
 import { AuthProvider } from './context/authContext';
+import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-
-    
-    <div className="App">
-    <div className="container-main">
-    <AuthProvider>
-    <Routes>
+      <div className="App">
+      <div className="container-main">
+      <AuthProvider>
+      <Routes>
       <Route path="/" element={<Welcome/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/waiter" element={<WaiterMainView/>}/>
-    </Routes>
-    </AuthProvider>
-
-    </div>
-    </div>
+      <Route path='/waiter' element={<WaiterMainView />} />
+      <Route path="/plates" element={<Plates />} />
+      </Routes>
+      </AuthProvider>
+      </div>
+      </div> 
   );
 }
-
 
 export default App;

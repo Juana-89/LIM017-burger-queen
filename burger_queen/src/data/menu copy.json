@@ -1,4 +1,35 @@
-  { 
+  {
+    "name": "Menu",
+    "breakfast": [
+    {
+      "id": "1",
+      "name": "Café americano",
+      "price": "5",
+      "img": "https://i.ibb.co/DR83Dm5/cafe.jpg"
+    },
+
+    {
+      "id": "2",
+      "name": "Café con leche",
+      "price": "7",
+      "img": "https://i.ibb.co/HrMvrSb/cafe-con-leche.png"
+    },
+     
+    {
+      "id": "3",
+      "name": "Sandwich de jamón",
+      "price": "10",
+      "img": "https://i.ibb.co/DwTrwbM/sandwich-de-jamon-y-queso.jpg"
+    },
+     
+    {
+      "id": "4",
+      "name": "Jugo de frutas",
+      "price": "7",
+      "img": "https://i.ibb.co/YQqfGJZ/jugo.png"
+    }
+    ], 
+    
     "lunch": [  
     {
       "id": "5",
