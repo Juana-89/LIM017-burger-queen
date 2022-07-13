@@ -20,7 +20,7 @@ export function Welcome() {
         <div className='lds-ellipsis loader'>
         <div></div><div></div><div></div><div></div>
         </div>
-        
+        debugger
         {setTimeout(function() { navigate('/login')},5000)}
       </div>
     )}
