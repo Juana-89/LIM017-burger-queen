@@ -7,7 +7,7 @@ import Header from './Header';
 import Plates from './Plates';
 import TableHeader from './TableHeader';
 import TableFooter from './TableFooter';
-import { addOrder } from '../../firebase/orders';
+import { addOrder } from '../../firebase/index.js';
 import '../../stylesheets/WaiterView/WaiterMainView.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
