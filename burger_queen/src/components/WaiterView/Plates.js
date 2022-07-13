@@ -3,6 +3,7 @@ import '../../stylesheets/WaiterView/Plates.css';
 import '../../stylesheets/WaiterView/ButtonsAddLess.css';
 
 const Plates = ({data, addToOrder}) => {
+  console.log('hi');
     let { id,name,img, price } = data;
     return (
         <div className="show_menues">
