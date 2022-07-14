@@ -1,0 +1,15 @@
+ 
+#table_select_item{
+    font-size: 20px;
+    width: 100%;
+}
+  
+.th_item{
+    width: 15vw;
+    text-align: center;
+}
+
+#tr_header_table{
+    border-bottom: #001524 solid;
+}
+  
