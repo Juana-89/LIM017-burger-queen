@@ -56,11 +56,6 @@ export const Plates = () => {
         
        
         </div>
-        {/* <Link to="/" className='back'>Return</Link>
-        <Link to="/orders" className="ordersBtn">
-          Orders
-        </Link> */}
-        
         
         <div className='sideBar'>
             <SidebarLunch
