@@ -41,7 +41,6 @@ const SidebarLunch = (props) => {
 
   return (
     <>
-      {/* <Inputs onChange={(e) => {setNewName(e.target.value); }}/> */}
       <div className='div_select_item_by_customer'>
       <table id="table_select_item" className="table table-striped">
       <TableHeader />
