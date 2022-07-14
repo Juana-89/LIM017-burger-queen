@@ -1,11 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { WaiterMainView } from './components/WaiterView/WaiterMainView';
-import { Welcome } from './components/Welcome';
-import { Login } from './components/Login';
+import { Welcome } from './components/Welcome/Welcome';
+import { Login } from './components/Login/Login';
 import { Plates } from "./components/WaiterView/Plates";
 import { AuthProvider } from './context/authContext';
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

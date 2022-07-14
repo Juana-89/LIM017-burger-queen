@@ -1,7 +1,6 @@
-import SidebarLunch from './PriceLunch'
-import Header from "./Header";
-import Inputs  from './Inputs';
-import { Link } from 'react-router-dom'
+import SidebarLunch from './PlatesSelect'
+import Header from "./Header/Header";
+import Inputs  from './Inputs/Inputs';
 import menu from '../../data/menu.json';
 import { useState } from 'react'
 import '../../stylesheets/WaiterView/Plates.css';
@@ -12,19 +11,19 @@ export const Plates = () => {
     const addItem = (item) => {
         const exist = cartItems.find((x) => x.id === item.id)
         if(exist) {
-          setCartItems(cartItems.map((x) => x.id === item.id ? {...exist, qty: exist.qty + 1} : x)         );
+          setCartItems(cartItems.map((x) => x.id === item.id ? {...exist, quantity: exist.quantity + 1} : x)         );
         } else {
-          setCartItems([...cartItems, {...item, qty: 1}])
+          setCartItems([...cartItems, {...item, quantity: 1}])
         }
       };
     
       const removeItem = (item) => {
          const exist = cartItems.find((x) => x.id === item.id);
-         if(exist.qty === 1) {
+         if(exist.quantity === 1) {
            setCartItems(cartItems.filter((x) => x.id !== item.id));
          } else {
           setCartItems(cartItems.map((x) => 
-          x.id === item.id ? {...exist, qty: exist.qty - 1} : x
+          x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x
             )
           );
          }
@@ -34,8 +33,6 @@ export const Plates = () => {
        <Header />
        <Inputs />
        <div className='container-plates'> 
-     
-       
        {menu.lunch.map((item) => {
         return (
           <div className="show_menues">

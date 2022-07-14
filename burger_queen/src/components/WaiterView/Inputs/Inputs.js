@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheets/WaiterView/Inputs.css';
+import './Inputs.css';
 
 function Inputs()  {
     return (

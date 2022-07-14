@@ -2,19 +2,18 @@ import React, { useState } from "react";
 import { db } from "../../firebase/config.js";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import TableHeader  from './TableHeader';
-import Inputs  from './Inputs';
+import Inputs  from './Inputs/Inputs';
 import Swal from "sweetalert2";
-import withReactContent from "sweetalert2";
 import '../../stylesheets/WaiterView/ButtonsAddLess.css';
 import '../../stylesheets/WaiterView/WaiterMainView.css';
 import '../../stylesheets/WaiterView/TableFooter.css';
 
-const SidebarLunch = (props) => {
+const PlatesSelect = (props) => {
   const { cartItems, addItem, removeItem } = props;
   const [newName, setNewName] = useState("");
   const userCollectionRef = collection(db, "orders");
 
-  const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
+  const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
   const tip = itemsPrice * 0.1;
   const totalPrice = itemsPrice + tip;
 
@@ -56,7 +55,7 @@ const SidebarLunch = (props) => {
           <th>
         <div className="div_add_subs">
         <button className='btn_add' onClick={() => addItem(item)}><i className="icon-plus-sign"></i></button>
-        <span className="span_quantity">{item.qty}</span>
+        <span className="span_quantity">{item.quantity}</span>
         <button className='btn_subs' onClick={() => removeItem(item)}><i className="icon-minus"></i></button>
         </div>
         </th>
@@ -90,4 +89,4 @@ const SidebarLunch = (props) => {
   );
 };
 
-export default SidebarLunch;
+export default PlatesSelect;
