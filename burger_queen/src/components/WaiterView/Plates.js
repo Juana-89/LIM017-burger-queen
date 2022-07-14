@@ -6,7 +6,6 @@ import menu from '../../data/menu.json';
 import { useState } from 'react'
 import '../../stylesheets/WaiterView/Plates.css';
 
-
 export const Plates = () => {
 
   const [newName, setNewName] = useState(""); 

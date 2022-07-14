@@ -10,6 +10,7 @@ import '../../stylesheets/WaiterView/WaiterMainView.css';
 import '../../stylesheets/WaiterView/TableFooter.css';
 
 const SidebarLunch = (props) => {
+
   const { cartItems, addItem, removeItem, newName, numTable} = props;
   const userCollectionRef = collection(db, "orders");
 
@@ -41,6 +42,7 @@ const SidebarLunch = (props) => {
 
   return (
     <>
+
       <div className='div_select_item_by_customer'>
       <table id="table_select_item" className="table table-striped">
       <TableHeader />

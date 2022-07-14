@@ -3,6 +3,7 @@ import '../../stylesheets/WaiterView/Inputs.css';
 
 function Inputs(props)  {
   const { handleChangeName, newName, handleChangeTable, numTable } = props;
+
     return (
         <div id="div_name_customer" className='d-grid gap-3'>
         <h4 className='h4_customer'>Cliente:</h4>
