@@ -10,14 +10,13 @@ import '../../stylesheets/WaiterView/WaiterMainView.css';
 import '../../stylesheets/WaiterView/TableFooter.css';
 
 const SidebarLunch = (props) => {
-  const { cartItems, addItem, removeItem } = props;
-  const [newName, setNewName] = useState("");
+  const { cartItems, addItem, removeItem, newName} = props;
   const userCollectionRef = collection(db, "orders");
 
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
   const tip = itemsPrice * 0.1;
   const totalPrice = itemsPrice + tip;
-
+ 
   const createOrder = async () => {
     console.log("creado");
     await addDoc(userCollectionRef, {
@@ -42,7 +41,6 @@ const SidebarLunch = (props) => {
 
   return (
     <>
-      {/* <Inputs onChange={(e) => {setNewName(e.target.value); }}/> */}
       <div className='div_select_item_by_customer'>
       <table id="table_select_item" className="table table-striped">
       <TableHeader />

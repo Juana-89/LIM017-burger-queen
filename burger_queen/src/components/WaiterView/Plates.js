@@ -6,9 +6,11 @@ import menu from '../../data/menu.json';
 import { useState } from 'react'
 import '../../stylesheets/WaiterView/Plates.css';
 
+
 export const Plates = () => {
 
-    const [cartItems, setCartItems] = useState([]);
+  const [newName, setNewName] = useState(""); 
+  const [cartItems, setCartItems] = useState([]);
     const addItem = (item) => {
         const exist = cartItems.find((x) => x.id === item.id)
         if(exist) {
@@ -17,7 +19,6 @@ export const Plates = () => {
           setCartItems([...cartItems, {...item, qty: 1}])
         }
       };
-    
       const removeItem = (item) => {
          const exist = cartItems.find((x) => x.id === item.id);
          if(exist.qty === 1) {
@@ -29,12 +30,17 @@ export const Plates = () => {
           );
          }
       }
+
+      const handleChangeName =(value)=>{
+        setNewName(value);
+        
+    
+      }
   return (
     <>
        <Header />
-       <Inputs />
+       <Inputs handleChangeName={handleChangeName} newName={newName}/>
        <div className='container-plates'> 
-     
        
        {menu.lunch.map((item) => {
         return (
@@ -60,7 +66,8 @@ export const Plates = () => {
             <SidebarLunch
             addItem={addItem}
             removeItem={removeItem}
-            cartItems={cartItems} />
+            cartItems={cartItems} 
+            newName={newName}/>
         </div>
   
     

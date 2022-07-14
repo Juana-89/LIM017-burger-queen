@@ -68,8 +68,6 @@ export function UserProvider ({children }) {
     const resetOrder = () =>{
         setOrder([])
         setClient(clients)
-       
-        
     }
 
      //guardar la comanda 
