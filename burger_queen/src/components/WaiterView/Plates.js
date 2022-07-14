@@ -10,6 +10,7 @@ import '../../stylesheets/WaiterView/Plates.css';
 export const Plates = () => {
 
   const [newName, setNewName] = useState(""); 
+  const [numTable, setNumTable] = useState("");
   const [cartItems, setCartItems] = useState([]);
     const addItem = (item) => {
         const exist = cartItems.find((x) => x.id === item.id)
@@ -33,13 +34,18 @@ export const Plates = () => {
 
       const handleChangeName =(value)=>{
         setNewName(value);
-        
-    
       }
+      
+      const handleChangeTable =(value)=>{
+        setNumTable(value);
+      }
+        
+      
   return (
     <>
        <Header />
-       <Inputs handleChangeName={handleChangeName} newName={newName}/>
+       <Inputs handleChangeName={handleChangeName} newName={newName}
+       handleChangeTable={handleChangeTable} numTable={numTable}/>
        <div className='container-plates'> 
        
        {menu.lunch.map((item) => {
@@ -62,7 +68,8 @@ export const Plates = () => {
             addItem={addItem}
             removeItem={removeItem}
             cartItems={cartItems} 
-            newName={newName}/>
+            newName={newName}
+            numTable={numTable}/>
         </div>
   
     

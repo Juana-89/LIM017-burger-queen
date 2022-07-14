@@ -10,17 +10,17 @@ import '../../stylesheets/WaiterView/WaiterMainView.css';
 import '../../stylesheets/WaiterView/TableFooter.css';
 
 const SidebarLunch = (props) => {
-  const { cartItems, addItem, removeItem, newName} = props;
+  const { cartItems, addItem, removeItem, newName, numTable} = props;
   const userCollectionRef = collection(db, "orders");
 
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
-  const tip = itemsPrice * 0.1;
-  const totalPrice = itemsPrice + tip;
+  const totalPrice = itemsPrice;
  
   const createOrder = async () => {
     console.log("creado");
     await addDoc(userCollectionRef, {
       Customer: newName,
+      Table: numTable,
       Order: cartItems,
       status: "Pending",
       created: Timestamp.fromDate(new Date()),
@@ -71,7 +71,7 @@ const SidebarLunch = (props) => {
           <div className='div_table_foot'>
           <div className='div_title_total'></div>
           <h5 className='h5_total'>Total $</h5>
-          <div className='inp_total'> $ {totalPrice.toFixed(2)}</div>
+          <div className='inp_total'> $ {totalPrice}</div>
           </div>
         </>
       )}

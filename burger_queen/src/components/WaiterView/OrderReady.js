@@ -25,15 +25,6 @@ export default function Kitchen() {
   return getOrders
   }, []);
 
-  // useEffect(() => {
-  //   const getOrders = async () => {
-  //     const data = await getDocs(ordersCollectionRef);
-  //     console.log(data);
-  //     setOrders(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-  //   };
-
-  //   getOrders();
-  // }, []);
   console.log(orders);
   return (
     <div>
@@ -71,7 +62,7 @@ export default function Kitchen() {
             );
           })}
       </div>
-      <div className="back ready">    
+      <div className="back ready">
       <Link to="/" className="returnbtn">
         Return
       </Link>
