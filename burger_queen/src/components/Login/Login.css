@@ -1,3 +1,4 @@
+
 .container-login{
   opacity: 0.9;
   display: flex;
@@ -7,7 +8,7 @@
   animation: scale-in-hor-left 0.8s both;
 }
 
-#carouselBurger{
+#carousel-burger{
   width: 62vw;
   height: 90vh;
   margin-top: 0px;
@@ -18,7 +19,7 @@
   height: 110vh;
   background-color: #fff;
   position: absolute;
-  margin-left: 320px;
+  margin-left: 306px;
   padding: 40px;
 }
 
@@ -42,7 +43,7 @@
 
 #form_img_logo{
   width: 60%;
-  margin: 10px 40px 20px ;
+  margin: 10px 20px 20px;
 }
 
 #form_inputs{
@@ -120,9 +121,13 @@
   }
 }
 
-@media (min-width: 768px){
+@media (max-width: 1280px) {
   #form_login{
     width: 46vw;
     margin-left: 100%;
+  }
+
+  #form_img_logo{
+     margin: 30px 50px 20px;
   }
 }

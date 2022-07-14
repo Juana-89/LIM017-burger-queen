@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../stylesheets/WaiterView/WaiterMainView.css';
+import './TableHeader.css';
 
 function TableHeader () {
     return(

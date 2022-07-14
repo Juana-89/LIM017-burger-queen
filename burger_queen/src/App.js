@@ -1,10 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import { Welcome } from './components/Welcome';
-import { Login } from './components/Login';
-import { Plates } from "./components/WaiterView/Plates";
+import { WaiterMainView } from './components/WaiterView/WaiterMainView';
+import { Welcome } from './components/Welcome/Welcome';
+import { Login } from './components/Login/Login';
 import { AuthProvider } from './context/authContext';
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Welcome/>}/>
       <Route path="/login" element={<Login/>}/>
-      <Route path="/plates" element={<Plates />} />
+      <Route path="/waiter" element={<WaiterMainView />} />
       </Routes>
       </AuthProvider>
       </div>
