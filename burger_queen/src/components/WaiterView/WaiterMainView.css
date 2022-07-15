@@ -45,7 +45,8 @@
 
 @media screen and (max-width: 1024px) {
   .container-plates{
-    margin-left: 2%;
+    margin-left: 1%;
+    width: 10%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
@@ -55,7 +56,4 @@
     width: 22vmin;
 }
 
-.btns_deleted_and_send_order{
-  margin: -11% 0 0 68%;
-}
 }
