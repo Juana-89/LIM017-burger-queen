@@ -13,9 +13,9 @@ export const WaiterMainView = () => {
 
       // Botón agregar
       const addItem = (item) => {
-        const exist = cartItems.find((x) => x.id === item.id)
+        const exist = cartItems.find((i) => i.id === item.id)
         if(exist) {
-        setCartItems(cartItems.map((x) => x.id === item.id ? {...exist, quantity: exist.quantity + 1} : x))
+        setCartItems(cartItems.map((i) => i.id === item.id ? {...exist, quantity: exist.quantity + 1} : i))
         } else {
         setCartItems([...cartItems, {...item, quantity: 1}])
         }
@@ -23,13 +23,19 @@ export const WaiterMainView = () => {
 
       // Botón restar
         const removeItem = (item) => {
-        const exist = cartItems.find((x) => x.id === item.id)
+        const exist = cartItems.find((i) => i.id === item.id)
         if(exist.quantity === 1) {
-        setCartItems(cartItems.filter((x) => x.id !== item.id))
+        setCartItems(cartItems.filter((i) => i.id !== item.id))
         } else {
-        setCartItems(cartItems.map((x) => x.id === item.id ? {...exist, quantity: exist.quantity - 1} : x)
+        setCartItems(cartItems.map((i) => i.id === item.id ? {...exist, quantity: exist.quantity - 1} : i)
         )
         }
+      };
+
+      // Botón eliminar productos de una fila
+      const removeItemsSelected = (item) => {
+        const exist = cartItems.find((i) => i.id === item.id)
+        if(exist.quantity) {setCartItems(cartItems.filter((i) => i.id !== item.id))} 
       };
 
       // Funcionalidad para el input nombre del cliente
@@ -52,7 +58,7 @@ export const WaiterMainView = () => {
         <div className="show_menues">
         <div className="container_products">
         <button className="btn_plates" key={item.id} onClick={() => addItem(item)}>
-        <img className="img_product" src ={ item.img} /><br/>{ item.name }<br/> $ { item.price }
+        <img className="img_product" src ={ item.img} /><br/>{ item.name }<br/> S/ { item.price }
         </button> 
         </div>
         </div>
@@ -72,6 +78,7 @@ export const WaiterMainView = () => {
             cartItems={cartItems} 
             newCustomer={newCustomer}
             newTable={newTable}
+            removeItemsSelected={removeItemsSelected}
             />
         </div>
     </>

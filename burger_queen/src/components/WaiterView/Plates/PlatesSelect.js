@@ -6,19 +6,20 @@ import Swal from "sweetalert2";
 import './PlatesSelect.css';
 
 const PlatesSelect = (props) => {
-  const { cartItems, addItem, removeItem, newCustomer, newTable} = props;
+  const { cartItems, addItem, removeItem, newCustomer, newTable, removeItemsSelected } = props;
   const userCollectionRef = collection(db, "orders");
 
-  const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
-  const totalPrice = itemsPrice;
- 
+  const totalPrice = cartItems.reduce((acc, cb) => acc + cb.price * cb.quantity, 0);
+
+  // Botón 'Enviar' para derivar pedido a cocina
   const createOrder = async () => {
     console.log("creado");
+    try {
     await addDoc(userCollectionRef, {
       Customer: newCustomer,
       Table: newTable,
       Order: cartItems,
-      status: "Pending",
+      status: 'Pendiente',
       created: Timestamp.fromDate(new Date()),
     });
     console.log();
@@ -31,7 +32,9 @@ const PlatesSelect = (props) => {
       showConfirmButton:false,
       toast: true,
     })
-  };
+  }
+catch (error) { throw new Error (error)}
+} ;
 
   return (
     <>
@@ -40,40 +43,36 @@ const PlatesSelect = (props) => {
       <table id="table_select_item" className="table table-striped">
       <TableHeader />
       <tbody>
-
         {cartItems.map((item) => (
-          <tr key={item.id}>
-          <th>{item.name}</th>
-          <th>
+
+        <tr key={item.id}>
+        <th>{item.name}</th>
+        <th>
         <div className="div_add_subs">
         <button className="btn_add" onClick={() => addItem(item)}><i className="icon-plus-sign"></i></button>
         <span className="span_quantity">{item.quantity}</span>
         <button className='btn_subs' onClick={() => removeItem(item)}><i className="icon-minus"></i></button>
         </div>
         </th>
-        <th>$ {item.price}.00</th>
+        <th>{item.quantity * item.price}.00</th>
+        <th><button className='btn_remove_elements' onClick={() => removeItemsSelected(item)}><i className="icon-trash"></i></button></th>
         </tr>
         ))}
-        
-        </tbody>
-        </table>
-     
+      </tbody>
+      </table>
       </div>
 
-          <div className="div_table_foot">
-          <div className="div_title_total"></div>
-          <h5 className="h5_total">Total $</h5>
-          <div className="inp_total"> $ {totalPrice.toFixed(2)}</div>
-          </div>
+      <div className="div_table_foot">
+      <div className="div_title_total"></div>
+      <h5 className="h5_total">Total S/</h5>
+      <div className="inp_total">{totalPrice.toFixed(2)}</div>
+      </div>
   
       
       <div className="btns_deleted_and_send_order">
-      <button id="btn_trash" className="btn"><i className="icon-trash"></i> Eliminar</button>
-      <button id="btn_send" className="btn" onClick={createOrder}><i className="icon-ok-sign"></i> Enviar</button>
-   
-     
-    </div>
-
+      <button id="btn_eye" className="btn"><i className="icon-eye-open"></i> Ver estado de pedidos</button>
+      <button id="btn_send" className="btn" onClick={createOrder}><i className="icon-ok-sign"></i> Enviar pedido a cocina</button>
+      </div>
      
       </>
   );
