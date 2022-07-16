@@ -1,6 +1,5 @@
-import React, {createContext, useContext } from 'react'
-//import ReactDOM from 'react-dom'
-import { signInWithEmailAndPassword} from 'firebase/auth';
+import * as React from 'react';
+import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase/config';
 // Archivo que permite saber a las otras páginas que el usuario se ha logueado
 
@@ -13,12 +12,12 @@ export const useAuth = () => {
 };
 
 export function AuthProvider({ children }) {
-  const login = (email, password) =>
-  signInWithEmailAndPassword(auth, email, password);
+
+  const login = (email, password) =>  signInWithEmailAndPassword(auth, email, password);
+  const logout = () =>  signOut(auth) ;
 
   return (
-  <authContext.Provider value = {{ login }}>{children}
-  </authContext.Provider>
+  <authContext.Provider value = {{ login, logout }}>{ children }</authContext.Provider>
   )}
 
 
