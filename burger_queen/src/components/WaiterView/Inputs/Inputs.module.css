@@ -1,4 +1,4 @@
-#div_name_customer{
+#divNameCustomer{
     margin: 5px 10px 20px 67px;
     width: 50%;
     justify-content: space-around;
@@ -7,29 +7,29 @@
     align-items: baseline;
 }
 
-.h4_customer{
+.titleCustomer{
     color:#fff;
 }
 
-#input_customer, #input_table{
+#inputCustomer, #inputTable{
     height: 34px;
     margin-left: -74px;
 }
 
-#input_table{
+#inputTable{
     width: 100px;
 }
 
 @media screen and (max-width: 1024px) {
-    #input_customer, #input_table{
+    #inputCustomer, #inputTable{
         margin-left: -44px;
     }
 
-    #input_customer{
+    #inputCustomer{
         width: 150px;
     }
     
-    #input_table{
+    #inputTable{
         width: 50px;
     }
 }

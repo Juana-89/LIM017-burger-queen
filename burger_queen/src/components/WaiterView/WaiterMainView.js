@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from "./Header/Header";
+import Header from "../Header/Header";
 import Inputs  from './Inputs/Inputs';
 import PlatesSelect from './Plates/PlatesSelect';
 import menu from '../../data/menu.json';
-import './WaiterMainView.css';
+import styles from './WaiterMainView.module.css';
 
 export const WaiterMainView = () => {
 
@@ -52,13 +52,13 @@ export const WaiterMainView = () => {
        <>
        <Header />
        <Inputs handleChangeName={handleChangeName} newName={newCustomer} handleChangeTable={handleChangeTable} newTable={newTable}/>
-       <div className="container-plates"> 
+       <div className={styles.containerPlates}> 
        {menu.lunch.map((item) => {
         return (
-        <div className="show_menues">
-        <div className="container_products">
-        <button className="btn_plates" key={item.id} onClick={() => addItem(item)}>
-        <img className="img_product" src ={ item.img} /><br/>{ item.name }<br/> S/ { item.price }
+        <div className={styles.showMenues}>
+        <div className={styles.containerProducts}>
+        <button className={styles.btnPlates} key={item.id} onClick={() => addItem(item)}>
+        <img className={styles.imgProduct} src ={ item.img} /><br/>{ item.name }<br/> S/ { item.price }
         </button> 
         </div>
         </div>
@@ -71,7 +71,7 @@ export const WaiterMainView = () => {
           Orders
         </Link> */}
         
-        <div className="div_plates_selected">
+        <div className="divPlatesSelected">
             <PlatesSelect
             addItem={addItem}
             removeItem={removeItem}

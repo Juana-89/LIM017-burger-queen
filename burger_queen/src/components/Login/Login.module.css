@@ -1,5 +1,5 @@
 
-.container-login{
+.containerLogin{
   opacity: 0.9;
   display: flex;
   flex-direction:  row;
@@ -8,14 +8,14 @@
   animation: scale-in-hor-left 0.8s both;
 }
 
-#carousel-burger{
+#carouselBurger{
   width: 62vw;
   height: 90vh;
   margin-top: 0px;
   margin-left: -540px;
 }
 
-#form_login{
+#formLogin{
   height: 110vh;
   background-color: #fff;
   position: absolute;
@@ -23,43 +23,43 @@
   padding: 40px;
 }
 
-#div_title{
+#title{
   /* background-image: linear-gradient(to right, #ff7d00 0%, #E44D26  100%); */
   border-radius: 10px;
   width:24em;
   margin-left: 25px;
 }
 
-#div_alert_error{
+#alertError{
   margin-top: 10px;
   color: #EF280F;
   font-weight: bold;
   font-size: 20px;
 }
 
-.h4_title{
+.hTitle{
   color: #ff7d00 !important;
 }
 
-#form_img_logo{
+#formImgLogo{
   width: 60%;
   margin: 10px 20px 20px;
 }
 
-#form_inputs{
+#formInputs{
   margin-left: 20px;
 }
 
-.form-label{
+.formLabel{
   font-size: 20px;
   color: #000;
 }
 
-#email, #password, #div_alert_error{
+#email, #password, #alertError{
   width:24em;
 }
 
-#btn-submit {
+#btnSubmit {
   border: none;
   background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
   margin-top: 30px;
@@ -74,7 +74,7 @@
   width:24em;
 }
 
-#btn-submit:hover {
+#btnSubmit:hover {
   background-position: right center; /* change the direction of the change here */
   color: #000;
   text-decoration: none;
@@ -84,7 +84,7 @@
   margin-top: 20px;
 }
 
-.form-login{
+.formLogin{
   padding:25px;
 }
 
@@ -122,12 +122,12 @@
 }
 
 @media (max-width: 1280px) {
-  #form_login{
+  #formLogin{
     width: 46vw;
     margin-left: 100%;
   }
 
-  #form_img_logo{
+  #forImgLogo{
      margin: 30px 50px 20px;
   }
 }

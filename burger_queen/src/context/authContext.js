@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { createContext, useContext } from 'react';
 import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase/config';
 // Archivo que permite saber a las otras páginas que el usuario se ha logueado
