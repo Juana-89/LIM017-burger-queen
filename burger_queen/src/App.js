@@ -1,3 +1,4 @@
+import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import { WaiterMainView } from './components/WaiterView/WaiterMainView';
 import { Welcome } from './components/Welcome/Welcome';

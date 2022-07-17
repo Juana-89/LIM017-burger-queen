@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css';
-console.log(bootstrap);
 
 const image1 = require('../../img/burger1.jpg');
 const image2 = require('../../img/burger2.jpg');
@@ -17,10 +16,9 @@ export function Login() {
   });
 
   // Exportando login
-  const {login} = useAuth();
+  const { login } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState('');
-  console.log(error)
 
   // Actualizar estado
   const handleChange = ({ target: { name, value } }) =>
@@ -70,12 +68,8 @@ export function Login() {
   <div id="div_title" className="p-3 mb-2 fw-bold text-white"><h4 className="h4_title">Ingreso de personal autorizado</h4></div>
   <label htmlFor="email" className="form-label">Correo electrónico</label>
   <input type="email" name="email" className="form-control" id="email" placeholder="juatha88@gmail.com" onChange={handleChange}/>
-  <div className="valid-feedback">Campo ingresado</div>
-  <div className="invalid-feedback">Debes completar este campo</div>
   <label htmlFor="password" className="form-label">Contraseña</label>
-  <input type="password" name="password" className="form-control" id="password" placeholder="mimamámemima" onChange={handleChange} />
-  <div className="valid-feedback">Campo ingresado</div>
-  <div className="invalid-feedback">Debes completar este campo</div>
+  <input type="password" name="password" className="form-control" id="password" placeholder="burgerqueen" onChange={handleChange} />
   <button type="submit" className="btn" id="btn-submit" onClick={handleSubmit}>Ingresar</button>
   <div id="div_alert_error">{error && <p>{error}</p>}</div>
   </form>
