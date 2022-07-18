@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { WaiterMainView } from './components/WaiterView/WaiterMainView';
 import { Welcome } from './components/Welcome/Welcome';
 import { Login } from './components/Login/Login';
-//import  Kitchen  from './components/KitchenView/Kitchen';
+import  Kitchen  from './components/KitchenView/Kitchen';
 import { AuthProvider } from './context/authContext';
 import "./App.css";
 
@@ -16,7 +16,7 @@ function App() {
       <Route path="/" element={<Welcome/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/waiter" element={<WaiterMainView />} />
-      {/* <Route path="/kitchen" element={<Kitchen />} /> */}
+      <Route path="/kitchen" element={<Kitchen />} />
       </Routes>
       </AuthProvider>
       </div>
