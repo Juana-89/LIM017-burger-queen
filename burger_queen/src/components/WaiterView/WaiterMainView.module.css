@@ -1,4 +1,4 @@
-.container-plates{
+.containerPlates{
     margin: -11px 64px;
     display: grid;
     gap: 3%;
@@ -9,20 +9,20 @@
     /* overflow: scroll; */
 }
 
-.show_menues{
+.showMenues{
   margin-top: 1%;
   width: 50%;
   margin-left: 28px;
 }
 
-.container_products{
+.containerProducts{
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.btn_plates{
+.btnPlates{
   border-radius: 10%;
   background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
   border: 5px solid;
@@ -35,7 +35,7 @@
   margin-right:-15px;
 }
 
-.img_product{
+.imgProduct{
   object-fit: cover;
   object-position: center center;
   border-radius: 5% 5% 0 0;
@@ -44,16 +44,16 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .container-plates{
+  .containerPlates{
     margin-left: 1%;
     width: 10%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
 
-.btn_plates {
+  .btnPlates {
     height: 30vmin;
     width: 22vmin;
-}
+  }
 
 }
