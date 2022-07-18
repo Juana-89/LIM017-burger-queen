@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Header from './Header';
+import Header from '../Header/Header';
 import { Link } from "react-router-dom";
 import { db } from "../../firebase/config.js";
 import { collection, updateDoc, doc, orderBy, onSnapshot, query } from "firebase/firestore";
 
-export default function Kitchen() {
+export default function OrdersReady() {
   const [orders, setOrders] = useState([]);
   
 

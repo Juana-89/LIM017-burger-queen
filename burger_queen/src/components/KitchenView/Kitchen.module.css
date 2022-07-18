@@ -1,5 +1,7 @@
 .sectionContainerKitchen{
     overflow: visible;
+    max-width: 250px;
+    overflow: visible;
 }
 
 #divOrderKitchen{

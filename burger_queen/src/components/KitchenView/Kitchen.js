@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { db } from '../../firebase/config';
 import { collection, updateDoc, doc, orderBy, onSnapshot, query } from 'firebase/firestore';
 import Header from '../Header/Header'
@@ -51,12 +50,6 @@ export default function Kitchen() {
       </div>
       )
       })}
-      </div>
-      
-      <div className="btnBack">
-        <Link to="/" className="returnbtn">
-          Return
-        </Link>
       </div>
     </section>
   );

@@ -20,7 +20,6 @@ export function Welcome() {
         <div className={styles.loader}>
         <div></div><div></div><div></div><div></div>
         </div>
-        debugger
         {setTimeout(function() { navigate('/login')},5000)}
       </div>
     )}

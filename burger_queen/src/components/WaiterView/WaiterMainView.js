@@ -13,7 +13,7 @@ export const WaiterMainView = () => {
 
       // Botón agregar
       const addItem = (item) => {
-        const exist = cartItems.find((i) => i.id === item.id)
+        const exist = cartItems.find((i) => i.id === item.id);
         if(exist) {
         setCartItems(cartItems.map((i) => i.id === item.id ? {...exist, quantity: exist.quantity + 1} : i))
         } else {
@@ -53,23 +53,18 @@ export const WaiterMainView = () => {
        <Header />
        <Inputs handleChangeName={handleChangeName} newName={newCustomer} handleChangeTable={handleChangeTable} newTable={newTable}/>
        <div className={styles.containerPlates}> 
-       {menu.lunch.map((item) => {
+       {menu.plates.map((item) => {
         return (
         <div className={styles.showMenues}>
         <div className={styles.containerProducts}>
         <button className={styles.btnPlates} key={item.id} onClick={() => addItem(item)}>
-        <img className={styles.imgProduct} src ={ item.img} /><br/>{ item.name }<br/> S/ { item.price }
+        <img className={styles.imgProduct} src ={item.img} /><br/>{item.name}<br/> S/ {item.price}
         </button> 
         </div>
         </div>
           )
        })}
        </div>
-        
-        {/* <Link to="/" className='back'>Return</Link>
-        <Link to="/orders" className="ordersBtn">
-          Orders
-        </Link> */}
         
         <div className="divPlatesSelected">
             <PlatesSelect
