@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { auth, logout } from '../../context/authContext';
+import { auth } from '../../firebase/config';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../context/authContext';
+import { useAuth  } from '../../context/authContext';
 import Swal from "sweetalert2";
 import styles from './Header.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,7 +13,7 @@ function Header()  {
     const { logout } = useAuth();
     const navigate = useNavigate();
     const [error, setError] = useState('');
-  
+ 
     const signOut = () => {
         logout()
         .then(() => 
@@ -33,7 +33,6 @@ function Header()  {
             footer: 'Espere unos segundos por favor...',
           })
     }
-
     return (
     <div id={styles.divBtnHeader}>
     <img className= {styles.imgLogo} src={logo}/>

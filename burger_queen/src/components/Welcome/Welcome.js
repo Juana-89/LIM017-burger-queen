@@ -16,7 +16,6 @@ export function Welcome() {
         <img className={styles.imageBurger}
         src={require('../../img/burger_load.png')}
         alt='Rico burger'/>
-
         <div className={styles.loader}>
         <div></div><div></div><div></div><div></div>
         </div>

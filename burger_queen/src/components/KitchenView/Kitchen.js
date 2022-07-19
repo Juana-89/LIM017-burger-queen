@@ -27,13 +27,13 @@ export default function Kitchen() {
 
   console.log(orders);
   return (
-    <section className='sectionContainerKitchen'>
+    <section className={styles.sectionContainerKitchen}>
         {/* <h1 className="menuKitchen">Kitchen</h1> */}
       <Header />
-      <div id={styles.divContainerOrder} className="card-body">
+      <div id={styles.divContainerOrder} className='card-body'>
       {orders.length !== 0 && orders.map((order) => {
       return (
-      <div id={styles.divOrderKitchen} className="card-body">
+      <div id={styles.divOrderKitchen} className='card-body'>
       <p><b>Cliente: {order.Customer}</b></p>
       {order.Order.map((element) => {
          return (
@@ -41,9 +41,9 @@ export default function Kitchen() {
           <li >{element.quantity} {element.name}</li>
           </ul>);
           })}
-          <div className={styles.divState}><p  className={styles.pElement}><b>Estado: {order.status}</b></p></div>
+          <div className={styles.divState}><p className={styles.pElement}><b>Estado: {order.status}</b></p></div>
           <div className={styles.divButtons}>
-          <button type="button" id={styles.btnReadyOrder} className="btn btn-warning" onClick={() => {updateOrder(order.id, order.status)}}>
+          <button type='button' id={styles.btnReadyOrder} className='btn btn-warning' onClick={() => {updateOrder(order.id, order.status)}}>
           <b>Listo para servir</b>
           </button>
           </div>
