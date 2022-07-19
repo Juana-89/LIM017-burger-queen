@@ -4,8 +4,8 @@ import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import { Login }  from './Login';
-import { AuthProvider } from '../../context/authContext.js'
-import MutationObserver from 'mutation-observer'
+import { AuthProvider, AuthContext } from '../../context/authContext.js';
+import  MutationObserver  from 'mutation-observer';
 global.MutationObserver = MutationObserver 
 
 jest.mock('../../context/authContext.js');
@@ -26,18 +26,17 @@ test ('Renderizando texto que está en el componente Login', () => {
 test ('Renderizando texto que está en los labels', () => {
     const history = createMemoryHistory()
     render(
-    <AuthProvider>
+    <AuthContext.Provider>
     <Router location={history.location} navigator={history}>
     <Login />
     </Router>
-    </AuthProvider>
+    </AuthContext.Provider>
     );
     const txtLabelEmail = screen.getByLabelText('Correo electrónico')
     const txtLabelPassword = screen.getByLabelText('Contraseña')
     expect(txtLabelEmail).toBeInTheDocument();
     expect(txtLabelPassword).toBeInTheDocument();
 });
-
 
     test.only("usuario identificado", async () => {
       const history = createMemoryHistory();
@@ -52,11 +51,13 @@ test ('Renderizando texto que está en los labels', () => {
       const pswInput = screen.getByPlaceholderText("burgerqueen");
       const btnLogin = await screen.findByText("Ingresar");
   
-      fireEvent.change(emailInput, { target: { value: "juatha88@gmail.com" } });
-      fireEvent.change(pswInput, { target: { value: "burgerqueen" } });
+      fireEvent.change(emailInput, { target: { value: "" } });
+      fireEvent.change(pswInput, { target: { value: "" } });
       fireEvent.click(btnLogin);
   
       await waitFor(() => {
-        expect(history.location.pathname).toBe("/plates");
+        expect(history.location.pathname).toBe("/waiter");
       });
     });
+
+ 

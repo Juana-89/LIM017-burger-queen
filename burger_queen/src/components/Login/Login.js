@@ -28,9 +28,10 @@ export function Login() {
     e.preventDefault();
     try{
       await login(user.email, user.password);
-      navigate('/plates');
+      navigate('/waiter');
     } catch (error) {
       setError(error.message);
+      console.log(error.message)
     }
  };
 
