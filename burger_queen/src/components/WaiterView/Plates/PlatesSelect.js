@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../../firebase/config.js";
 import TableHeader  from './TableHeader';
@@ -25,11 +26,12 @@ const PlatesSelect = (props) => {
     console.log();
     Swal.fire({
       position: 'bottom-end',
-      title: 'Orden enviada',
+      title: '<b>Orden enviada</b>',
       icon: 'success',
       timer: 2000,
       timerProgressBar: true,
       showConfirmButton:false,
+      allowOutsideClick: false,
       toast: true,
     })
   }
@@ -66,10 +68,13 @@ catch (error) { throw new Error (error)}
       <h5 className={styles.total}>Total S/</h5>
       <div className={styles.inpTotal}>{totalPrice.toFixed(2)}</div>
       </div>
-  
       
       <div className={styles.btnsOrders}>
-      <button id={styles.btnEye} className="btn"><i className="icon-eye-open"></i> Ver estado de pedidos</button>
+              {/* <Link to="/" className='back'>Return</Link>
+        <Link to="/orders" className="ordersBtn">
+          Orders
+        </Link> */}
+      <Link to='/orders'><button id={styles.btnEye} className="btn"><i className="icon-eye-open"></i> Ver estado de pedidos</button></Link> 
       <button id={styles.btnSend} className="btn" onClick={createOrder}><i className="icon-ok-sign"></i> Enviar pedido a cocina</button>
       </div>
      

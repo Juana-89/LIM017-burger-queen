@@ -1,8 +1,8 @@
-.sectionContainerKitchen{
+.sectionContainerOrders{
     overflow: scroll;
-} 
+}
 
-#divOrderKitchen{
+#divOrderWaiter{
     border-radius: 20px;
     border-color: #000;
     background-color:#ffecd1;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #divOrderKitchen{
+    #divOrderWaiter{
       max-width: 250px;
       grid-template-columns: repeat(4, 1fr);
       height: 400px;

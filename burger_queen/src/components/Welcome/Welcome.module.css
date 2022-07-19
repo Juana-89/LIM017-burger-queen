@@ -28,8 +28,8 @@
   -webkit-animation:tracking-in-expand 5s ease-in both;
   animation:tracking-in-expand 8s ease-in both;
   animation: fade-out 10s;
-  margin-left: 355px;
-  margin-top:-9%;
+  margin-right: -57px;
+  margin-top:-10%;
   width: 100%;
   height: 100vh;
 }
