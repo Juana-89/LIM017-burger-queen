@@ -1,26 +1,24 @@
 import * as React from "react";
 import { useAuth } from '../../context/authContext';
 import { useNavigate } from 'react-router-dom';
-import './Welcome.css';
+import styles from './Welcome.module.css';
 
 export function Welcome() {
   const navigate = useNavigate()
   const { user } = useAuth()
   console.log(user)
   return (
-      <div className='container-welcome'>
-        {<img className='image-title'
+      <div className= {styles.containerWelcome}>
+        <img className= {styles.imageTitle}
         src={require('../../img/font1.png')}
-        alt='Rico burger'/>}
+        alt='Rico burger'/>
 
-        { <img className='image-burger'
+        <img className={styles.imageBurger}
         src={require('../../img/burger_load.png')}
-        alt='Rico burger'/>}
-
-        <div className='lds-ellipsis loader'>
+        alt='Rico burger'/>
+        <div className={styles.loader}>
         <div></div><div></div><div></div><div></div>
         </div>
-        debugger
         {setTimeout(function() { navigate('/login')},5000)}
       </div>
     )}

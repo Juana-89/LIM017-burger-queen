@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../../firebase/config.js";
 import TableHeader  from './TableHeader';
 import Swal from "sweetalert2";
-import './PlatesSelect.css';
+import styles from './PlatesSelect.module.css';
 
 const PlatesSelect = (props) => {
   const { cartItems, addItem, removeItem, newCustomer, newTable, removeItemsSelected } = props;
@@ -25,11 +26,12 @@ const PlatesSelect = (props) => {
     console.log();
     Swal.fire({
       position: 'bottom-end',
-      title: 'Orden enviada',
+      title: '<b>Orden enviada</b>',
       icon: 'success',
       timer: 2000,
       timerProgressBar: true,
       showConfirmButton:false,
+      allowOutsideClick: false,
       toast: true,
     })
   }
@@ -38,9 +40,8 @@ catch (error) { throw new Error (error)}
 
   return (
     <>
-
-      <div className='div_select_item_by_customer'>
-      <table id="table_select_item" className="table table-striped">
+      <div className={styles.divSelectItemByCustomer}>
+      <table id={styles.tableSelectItem} className="table table-striped">
       <TableHeader />
       <tbody>
         {cartItems.map((item) => (
@@ -48,30 +49,33 @@ catch (error) { throw new Error (error)}
         <tr key={item.id}>
         <th>{item.name}</th>
         <th>
-        <div className="div_add_subs">
-        <button className="btn_add" onClick={() => addItem(item)}><i className="icon-plus-sign"></i></button>
-        <span className="span_quantity">{item.quantity}</span>
-        <button className='btn_subs' onClick={() => removeItem(item)}><i className="icon-minus"></i></button>
+        <div className={styles.divAddSubs}>
+        <button className={styles.btnAdd} onClick={() => addItem(item)}><i className="icon-plus-sign"></i></button>
+        <span className={styles.spanQuantity}>{item.quantity}</span>
+        <button className={styles.btnSubs} onClick={() => removeItem(item)}><i className="icon-minus"></i></button>
         </div>
         </th>
         <th>{item.quantity * item.price}.00</th>
-        <th><button className='btn_remove_elements' onClick={() => removeItemsSelected(item)}><i className="icon-trash"></i></button></th>
+        <th><button className={styles.btnRemoveElements} onClick={() => removeItemsSelected(item)}><i className="icon-trash"></i></button></th>
         </tr>
         ))}
       </tbody>
       </table>
       </div>
 
-      <div className="div_table_foot">
-      <div className="div_title_total"></div>
-      <h5 className="h5_total">Total S/</h5>
-      <div className="inp_total">{totalPrice.toFixed(2)}</div>
+      <div className={styles.divTableFoot}>
+      <div className={styles.divTitleTotal}></div>
+      <h5 className={styles.total}>Total S/</h5>
+      <div className={styles.inpTotal}>{totalPrice.toFixed(2)}</div>
       </div>
-  
       
-      <div className="btns_deleted_and_send_order">
-      <button id="btn_eye" className="btn"><i className="icon-eye-open"></i> Ver estado de pedidos</button>
-      <button id="btn_send" className="btn" onClick={createOrder}><i className="icon-ok-sign"></i> Enviar pedido a cocina</button>
+      <div className={styles.btnsOrders}>
+              {/* <Link to="/" className='back'>Return</Link>
+        <Link to="/orders" className="ordersBtn">
+          Orders
+        </Link> */}
+      <Link to='/orders'><button id={styles.btnEye} className="btn"><i className="icon-eye-open"></i> Ver estado de pedidos</button></Link> 
+      <button id={styles.btnSend} className="btn" onClick={createOrder}><i className="icon-ok-sign"></i> Enviar pedido a cocina</button>
       </div>
      
       </>

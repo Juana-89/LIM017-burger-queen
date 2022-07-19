@@ -1,13 +1,13 @@
 import React from 'react';
-import './TableHeader.css';
+import styles from './TableHeader.module.css';
 
 function TableHeader () {
     return(
     <thead>
-    <tr id="tr_header_table">
-    <th className="th_item">Item</th>
-    <th className="th_quantity">Cantidad</th>
-    <th className="th_price">Precio</th>
+    <tr id={styles.trHeaderTable}>
+    <th className={styles.thItem}>Item</th>
+    <th className="quantity">Cantidad</th>
+    <th className="price">Precio</th>
     <th className="num"></th>
     </tr>
     </thead>

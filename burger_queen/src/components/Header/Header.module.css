@@ -1,30 +1,30 @@
-#div_btn_header{
+#divBtnHeader{
     display:flex;
     padding: 20px;
     margin-top: 0;
 }
 
-.h3-title{
+.title{
     color: #fff;
     /* margin-left: 12px; */
 }
 
-.icon-off{
+#icoOff{
     margin-right: 4px;
 }
 
-.img-logo{
+.imgLogo{
     width: 10%;
     height: 10%;
 }
 
-#btn_logout{
+#btnLogout{
     margin-left: 48em;
 }
 
 @media screen and (max-width: 1024px) {
     
-    #btn_logout{
+    #btnLogout{
         margin-left: 31em;
     }
 }

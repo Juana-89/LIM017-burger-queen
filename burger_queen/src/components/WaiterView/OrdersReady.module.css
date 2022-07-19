@@ -1,0 +1,46 @@
+.sectionContainerOrders{
+    overflow: scroll;
+}
+
+#divOrderWaiter{
+    border-radius: 20px;
+    border-color: #000;
+    background-color:#ffecd1;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 18px;
+    display: grid;
+    margin: 25px;
+}
+
+.divButtons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 43px;
+}
+
+.divState{
+    display: flex;
+    align-items: flex-end;
+}
+
+#divContainerOrder{
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin: 25px;
+}
+
+#btnReadyOrder{
+    height: 50px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+    #divOrderWaiter{
+      max-width: 250px;
+      grid-template-columns: repeat(4, 1fr);
+      height: 400px;
+
+    }
+}

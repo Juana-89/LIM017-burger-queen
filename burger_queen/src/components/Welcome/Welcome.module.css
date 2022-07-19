@@ -1,4 +1,4 @@
-.container-welcome{
+.containerWelcome{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,32 +7,37 @@
   width: 100%;
 }
 
-.image-burger{
+.imageBurger{
   height: 38vh;
   width: 15vw;
   -webkit-animation:tracking-in-expand 3s ease-in both;
   animation:tracking-in-expand 3s ease-in both;
 }
 
-.image-title{
-font-family: 'Work Sans', sans-serif;
-color: #ffff;
-width: 20vw;
-height: 20vh;
--webkit-animation:tracking-in-expand 2s ease-in both;
-animation:tracking-in-expand 2s ease-in both
+.imageTitle{
+  font-family: 'Work Sans', sans-serif;
+  color: #ffff;
+  width: 20vw;
+  height: 20vh;
+  -webkit-animation:tracking-in-expand 2s ease-in both;
+  animation:tracking-in-expand 2s ease-in both
+}
+
+.loader{
+  position: relative;
+  -webkit-animation:tracking-in-expand 5s ease-in both;
+  animation:tracking-in-expand 8s ease-in both;
+  animation: fade-out 10s;
+  margin-right: -57px;
+  margin-top:-10%;
+  width: 100%;
+  height: 100vh;
 }
 
 @keyframes tracking-in-expand {
   0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 
-  .lds-ellipsis {
-   
-    width: 100%;
-    height: 100vh;
-  }
-
-  .lds-ellipsis div {
+  .loader div {
     position: absolute;
     top: 33px;
     width: 13px;
@@ -42,41 +47,40 @@ animation:tracking-in-expand 2s ease-in both
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
 
-  .lds-ellipsis div:nth-child(1) {
+  .loader div:nth-child(1) {
     left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
+    animation: loader1 0.6s infinite;
   }
 
-  .lds-ellipsis div:nth-child(2) {
+  .loader div:nth-child(2) {
     left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
+    animation: loader2 0.6s infinite;
   }
 
-  .lds-ellipsis div:nth-child(3) {
+  .loader div:nth-child(3) {
     left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
+    animation: loader2 0.6s infinite;
   }
 
-  .lds-ellipsis div:nth-child(4) {
+  .loader div:nth-child(4) {
     left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
+    animation: loader3 0.6s infinite;
   }
 
-  @keyframes lds-ellipsis1 {
+  @keyframes loader1 {
     0% {transform: scale(0);}
     100% {transform: scale(1);}
   }
 
-  @keyframes lds-ellipsis3 {
+  @keyframes loader3 {
     0% {transform: scale(1);}
     100% {transform: scale(0);}
   }
 
-  @keyframes lds-ellipsis2 {
+  @keyframes loader2 {
     0% {transform: translate(0, 0);}
     100% {transform: translate(24px, 0);}
   }
-
 
   @keyframes fade-out {
     0% {
@@ -87,18 +91,9 @@ animation:tracking-in-expand 2s ease-in both
     }
   }
 
-.loader{
-  position: relative;
-  -webkit-animation:tracking-in-expand 5s ease-in both;
-  animation:tracking-in-expand 8s ease-in both;
-  animation: fade-out 10s;
-  margin-left: 355px;
-  margin-top:-9%;
-}
-
 @media (min-width: 768px){
   .loader{
-    margin-left: 194px;
+    margin-left: 134px;
     margin-top:-14%;
   }
 }
