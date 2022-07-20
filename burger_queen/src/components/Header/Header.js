@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import styles from './Header.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const logo = require('../../img/font1.png')
 
 function Header()  {

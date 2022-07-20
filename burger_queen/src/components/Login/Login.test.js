@@ -56,11 +56,11 @@ test("Usuario registrado y logueado", async () => {
     fireEvent.click(btnLogin);
      
     await waitFor(() => {
-        expect(history.location.pathname).toBe("/plates");
+        expect(history.location.pathname).toBe("/");
     });
 });
 
-test.only("Usuario no registrado", async () => {
+test("Usuario no registrado", async () => {
     const history = createMemoryHistory();
     render(
     <AuthProvider>
