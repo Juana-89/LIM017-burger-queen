@@ -6,6 +6,7 @@ import { Login } from './components/Login/Login';
 import  Kitchen  from './components/KitchenView/Kitchen';
 import OrdersReady from './components/WaiterView/OrdersReady'
 import { AuthProvider } from './context/authContext';
+import {PrivateRoute} from './components/PrivateRoute'
 import "./App.css";
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
       <Route path="/waiter" element={<WaiterMainView />} />
       <Route path="/kitchen" element={<Kitchen />} />
       <Route path="/orders" element={<OrdersReady />} />
+      {/* <Route exact path="/waiter" element={<PrivateRoute component= {<WaiterMainView />} />} />
+      <Route exact path="/kitchen" element={<PrivateRoute component= {<Kitchen />} />} />
+      <Route exact path="/orders" element={<PrivateRoute component= {<OrdersReady />} />} /> */}
       </Routes>
       </AuthProvider>
       </div>
