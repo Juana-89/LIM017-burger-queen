@@ -39,6 +39,7 @@ test ('Renderizando texto que está en los labels', () => {
 });
 
 test("Usuario '/waiter' registrado y logueado", async () => {
+
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -50,17 +51,18 @@ test("Usuario '/waiter' registrado y logueado", async () => {
     const inputEmail = screen.getByPlaceholderText("juatha88@gmail.com");
     const inputPassword = screen.getByPlaceholderText("burgerqueen");
     const btnLogin = await screen.findByText("Ingresar");
-      
+
     fireEvent.change(inputEmail, { target: { value: "waiter@burguer-queen.com" } });
     fireEvent.change(inputPassword, { target: { value: "burgerqueen" } });
     fireEvent.click(btnLogin);
-     
+
     await waitFor(() => {
         expect(history.location.pathname).toBe("/waiter");
     });
 });
 
-test("Usuario '/cook' registrado y logueado", async () => {
+test("Cocinero registrado y logueado", async () => {
+
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -72,37 +74,14 @@ test("Usuario '/cook' registrado y logueado", async () => {
     const inputEmail = screen.getByPlaceholderText("juatha88@gmail.com");
     const inputPassword = screen.getByPlaceholderText("burgerqueen");
     const btnLogin = await screen.findByText("Ingresar");
-      
+
     fireEvent.change(inputEmail, { target: { value: "cook_boss@burguer-queen.com" } });
-    fireEvent.change(inputPassword, { target: { value: "burgerqueen" } });
+    fireEvent.change(inputPassword, { target: { value: "111111" } });
     fireEvent.click(btnLogin);
-     
+
     await waitFor(() => {
         expect(history.location.pathname).toBe("/kitchen");
     });
-});
+})
 
-
-test.only('Muestra error de usuario no registrado', async () => {
-    const history = createMemoryHistory();
-    render(
-    <AuthProvider>
-    <Router location={history.location} navigator={history}>
-    <Login />
-    </Router>
-    </AuthProvider>
-    );
-    const inputEmail = screen.getByPlaceholderText("juatha88@gmail.com");
-    const inputPassword = screen.getByPlaceholderText("burgerqueen");
-    const btnLogin = await screen.findByText("Ingresar");
-      
-    fireEvent.change(inputEmail, { target: { value: "maria88@gmail.com" } });
-    fireEvent.change(inputPassword, { target: { value: "111111" } });
-    fireEvent.click(btnLogin);
-     
-    await waitFor(() => {
-        useAuth(inputEmail, inputPassword)
-        .catch((error) => {
-        expect(history.location.pathname).toBe(error);
-    });
-})})
+   
