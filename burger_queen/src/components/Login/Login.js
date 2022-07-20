@@ -29,14 +29,13 @@ export function Login() {
       if(user.email === emailWaiter){
       await login(user.email, user.password);
       navigate('/waiter')
-      }else{
-        if(user.email === emailKitchen){
+      }else if(user.email === emailKitchen){
           await login(user.email, user.password);
           navigate('/kitchen')
-        }
       }
-    } catch (error) {
+      } catch (error) {
       setError(error.message);
+      console.log(error.message)
     }
  };
 
