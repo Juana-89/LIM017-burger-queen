@@ -51,7 +51,7 @@ export default function OrdersReady() {
         );
         })}
       </div>
-      <div className="back ready">    
+      <div className="btnBack">    
       <Link to="/" className="returnbtn">
         Return
       </Link>

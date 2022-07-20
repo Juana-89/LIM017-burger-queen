@@ -38,7 +38,9 @@ test ('Renderizando texto que está en los labels', () => {
     expect(txtLabelPassword).toBeInTheDocument();
 });
 
+
 test("Mesero registrado y logueado", async () => {
+
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -61,6 +63,7 @@ test("Mesero registrado y logueado", async () => {
 });
 
 test("Cocinero registrado y loguado", async () => {
+
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -81,3 +84,5 @@ test("Cocinero registrado y loguado", async () => {
         expect(history.location.pathname).toBe("/kitchen");
     });
 })
+
+   
