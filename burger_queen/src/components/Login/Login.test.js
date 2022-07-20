@@ -38,7 +38,7 @@ test ('Renderizando texto que está en los labels', () => {
     expect(txtLabelPassword).toBeInTheDocument();
 });
 
-test("Usuario registrado y logueado", async () => {
+test("Usuario '/waiter' registrado y logueado", async () => {
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -51,16 +51,39 @@ test("Usuario registrado y logueado", async () => {
     const inputPassword = screen.getByPlaceholderText("burgerqueen");
     const btnLogin = await screen.findByText("Ingresar");
       
-    fireEvent.change(inputEmail, { target: { value: "juatha88@gmail.com" } });
+    fireEvent.change(inputEmail, { target: { value: "waiter@burguer-queen.com" } });
     fireEvent.change(inputPassword, { target: { value: "burgerqueen" } });
     fireEvent.click(btnLogin);
      
     await waitFor(() => {
-        expect(history.location.pathname).toBe("/");
+        expect(history.location.pathname).toBe("/waiter");
     });
 });
 
-test("Usuario no registrado", async () => {
+test("Usuario '/cook' registrado y logueado", async () => {
+    const history = createMemoryHistory();
+    render(
+    <AuthProvider>
+    <Router location={history.location} navigator={history}>
+    <Login />
+    </Router>
+    </AuthProvider>
+    );
+    const inputEmail = screen.getByPlaceholderText("juatha88@gmail.com");
+    const inputPassword = screen.getByPlaceholderText("burgerqueen");
+    const btnLogin = await screen.findByText("Ingresar");
+      
+    fireEvent.change(inputEmail, { target: { value: "cook_boss@burguer-queen.com" } });
+    fireEvent.change(inputPassword, { target: { value: "burgerqueen" } });
+    fireEvent.click(btnLogin);
+     
+    await waitFor(() => {
+        expect(history.location.pathname).toBe("/kitchen");
+    });
+});
+
+
+test.only('Muestra error de usuario no registrado', async () => {
     const history = createMemoryHistory();
     render(
     <AuthProvider>
