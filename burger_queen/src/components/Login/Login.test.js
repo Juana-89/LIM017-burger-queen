@@ -101,8 +101,6 @@ test.only('Muestra error de usuario no registrado', async () => {
     fireEvent.click(btnLogin);
      
     await waitFor(() => {
-        useAuth(inputEmail, inputPassword)
-        .catch((error) => {
-        expect(history.location.pathname).toBe(error);
-    });
+       const error = screen.queryByTestId('auth/invalid-password')
+       expect(error).toBe(error.message);
 })})
