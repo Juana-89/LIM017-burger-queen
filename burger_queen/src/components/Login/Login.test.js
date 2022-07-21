@@ -38,8 +38,7 @@ test ('Renderizando texto que está en los labels', () => {
     expect(txtLabelPassword).toBeInTheDocument();
 });
 
-
-test("Mesero registrado y logueado", async () => {
+test("Usuario '/waiter' registrado y logueado", async () => {
 
     const history = createMemoryHistory();
     render(
@@ -62,7 +61,7 @@ test("Mesero registrado y logueado", async () => {
     });
 });
 
-test("Cocinero registrado y loguado", async () => {
+test("Cocinero registrado y logueado", async () => {
 
     const history = createMemoryHistory();
     render(
@@ -85,4 +84,24 @@ test("Cocinero registrado y loguado", async () => {
     });
 })
 
-   
+test.only('Muestra error de usuario no registrado', async () => {
+    const history = createMemoryHistory();
+    render(
+    <AuthProvider>
+    <Router location={history.location} navigator={history}>
+    <Login />
+    </Router>
+    </AuthProvider>
+    );
+    const inputEmail = screen.getByPlaceholderText("juatha88@gmail.com");
+    const inputPassword = screen.getByPlaceholderText("burgerqueen");
+    const btnLogin = await screen.findByText("Ingresar");
+      
+    fireEvent.change(inputEmail, { target: { value: "maria88@gmail.com" } });
+    fireEvent.change(inputPassword, { target: { value: "111111" } });
+    fireEvent.click(btnLogin);
+     
+    await waitFor(() => {
+       const error = screen.queryByTestId('auth/invalid-password')
+       expect(error).toBe(error.message);
+})})

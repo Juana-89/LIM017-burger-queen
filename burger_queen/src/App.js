@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { WaiterMainView } from './components/WaiterView/WaiterMainView';
 import { Welcome } from './components/Welcome/Welcome';
 import { Login } from './components/Login/Login';
@@ -8,6 +8,11 @@ import OrdersReady from './components/WaiterView/OrdersReady'
 import { AuthProvider } from './context/authContext';
 import {PrivateRoute} from './components/PrivateRoute'
 import "./App.css";
+
+export const LocationDisplay = () => {
+  const location = useLocation()
+  return <div data-testid="location-display">{location.pathname}</div>
+}
 
 function App() {
   return (
