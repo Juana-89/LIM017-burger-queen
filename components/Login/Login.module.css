@@ -1,0 +1,131 @@
+
+.containerLogin{
+  opacity: 0.9;
+  display: flex;
+  flex-direction:  row;
+  flex-wrap: nowrap;
+  -webkit-animation: scale-in-hor-left 0.8s both;
+  animation: scale-in-hor-left 0.8s both;
+}
+
+#carouselBurger{
+  width: 62vw;
+  height: 90vh;
+  margin-top: 0px;
+  margin-left: -540px;
+}
+
+#formLogin{
+  height: 110vh;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 306px;
+  padding: 40px;
+}
+
+#title{
+  /* background-image: linear-gradient(to right, #ff7d00 0%, #E44D26  100%); */
+  width:24em;
+}
+
+#alertError{
+  margin-top: 10px;
+  color: #EF280F;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hTitle{
+  color: #ff7d00 !important;
+}
+
+#formImgLogo{
+  width: 60%;
+  margin: 10px 20px 20px;
+}
+
+#formInputs{
+  margin-left: 20px;
+}
+
+.formLabel{
+  font-size: 20px;
+  color: #000;
+}
+
+#email, #password, #alertError{
+  width:24em;
+}
+
+#btnSubmit {
+  border: none;
+  background-image: linear-gradient(to right,  #ff7d00 0%, #E44D26  100%);
+  margin-top: 30px;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;            
+  box-shadow: 5px 5px 10px #eee;
+  border-radius: 10px;
+  display: block;
+  width:24em;
+}
+
+#btnSubmit:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #000;
+  text-decoration: none;
+}
+
+.alert{
+  margin-top: 20px;
+}
+
+.formLogin{
+  padding:25px;
+}
+
+@-webkit-keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-left {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1280px) {
+  #formLogin{
+    width: 46vw;
+    margin-left: 100%;
+  }
+
+  #formImgLogo{
+     margin: 30px 70px 20px;
+  }
+}

@@ -1,0 +1,58 @@
+  { 
+    "plates": [  
+    {
+      "id": "5",
+      "name": "Sandwich simple",
+      "price": "10",
+      "img": "https://i.ibb.co/MGRmhN4/simple-burger.jpg"
+    },
+
+    {
+      "id": "6",
+      "name": "Sandwich doble",
+      "price": "15",
+      "img": "https://i.ibb.co/gjvG23k/doble-burger.jpg"
+    },
+
+    {
+      "id": "7",
+      "name": "Papas fritas",
+      "price": "5",
+      "img": "https://i.ibb.co/NtM4QrQ/potato-chips.jpg"
+    },
+
+    {
+      "id": "8",
+      "name": "Aros de cebolla",
+      "price": "5",
+      "img": "https://i.ibb.co/hYBSBBq/aros-de-cebolla1.jpg"
+      },
+
+    {
+      "id": "6",
+      "name": "Agua 500ml",
+      "price": "5",
+      "img": "https://i.ibb.co/2cLB4R0/agua-500ml.png"
+    },
+
+    {
+      "id": "7",
+      "name": "Agua 750ml",
+      "price": "5",
+      "img": "https://i.ibb.co/ZYmNh8k/Agua-750ml.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Gaseosa 500ml",
+      "price": "7",
+      "img": "https://i.ibb.co/SJn2NHB/gaseosa-500ml.png"
+    },
+
+    {
+      "id": "9",
+      "name": "Gaseosa 750ml",
+      "price": "10",
+      "img": "https://i.ibb.co/0FjmVnG/pepsi750ml.png"
+    }
+ ]
+}
