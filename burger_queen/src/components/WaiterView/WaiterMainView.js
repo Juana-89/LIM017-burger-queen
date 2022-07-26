@@ -58,7 +58,7 @@ export const WaiterMainView = () => {
         <div className={styles.showMenues}>
         <div className={styles.containerProducts}>
         <button className={styles.btnPlates} key={item.id} onClick={() => addItem(item)}>
-        <img className={styles.imgProduct} src ={item.img} /><br/>{item.name}<br/> S/ {item.price}
+        <img className={styles.imgProduct} src ={item.img} alt="Producto"/><br/>{item.name}<br/> S/ {item.price}
         </button> 
         </div>
         </div>
