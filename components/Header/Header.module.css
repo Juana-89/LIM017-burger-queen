@@ -1,0 +1,30 @@
+#divBtnHeader{
+    display:flex;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.title{
+    color: #fff;
+    /* margin-left: 12px; */
+}
+
+#icoOff{
+    margin-right: 4px;
+}
+
+.imgLogo{
+    width: 10%;
+    height: 10%;
+}
+
+#btnLogout{
+    margin-left: 48em;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    #btnLogout{
+        margin-left: 31em;
+    }
+}
