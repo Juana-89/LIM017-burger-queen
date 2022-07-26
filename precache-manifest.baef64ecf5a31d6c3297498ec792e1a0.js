@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "74d98b049b0c312f2864",
+    "revision": "765c6f052f222e2f5d39",
     "url": "/LIM017-burger-queen/static/css/main.2e25eb93.chunk.css"
   },
   {
-    "revision": "74d98b049b0c312f2864",
-    "url": "/LIM017-burger-queen/static/js/main.74d98b04.chunk.js"
+    "revision": "765c6f052f222e2f5d39",
+    "url": "/LIM017-burger-queen/static/js/main.765c6f05.chunk.js"
   },
   {
-    "revision": "af97aced6fe0babb3136",
+    "revision": "65b0da1377d825ea04e3",
     "url": "/LIM017-burger-queen/static/css/1.3729cda0.chunk.css"
   },
   {
-    "revision": "af97aced6fe0babb3136",
-    "url": "/LIM017-burger-queen/static/js/1.af97aced.chunk.js"
+    "revision": "65b0da1377d825ea04e3",
+    "url": "/LIM017-burger-queen/static/js/1.65b0da13.chunk.js"
   },
   {
     "revision": "d28c629207b72b66cce0",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/LIM017-burger-queen/static/media/fondo1.eb01963d.png"
   },
   {
-    "revision": "4f51db28ce3782b074b6e75a10c0e390",
+    "revision": "8db3ff0d7107fd3311f0af86637d97f2",
     "url": "/LIM017-burger-queen/index.html"
   }
 ];

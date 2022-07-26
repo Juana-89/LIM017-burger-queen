@@ -1,10 +1,10 @@
 {
   "main.css": "/LIM017-burger-queen/static/css/main.2e25eb93.chunk.css",
-  "main.js": "/LIM017-burger-queen/static/js/main.74d98b04.chunk.js",
-  "main.js.map": "/LIM017-burger-queen/static/js/main.74d98b04.chunk.js.map",
+  "main.js": "/LIM017-burger-queen/static/js/main.765c6f05.chunk.js",
+  "main.js.map": "/LIM017-burger-queen/static/js/main.765c6f05.chunk.js.map",
   "static/css/1.3729cda0.chunk.css": "/LIM017-burger-queen/static/css/1.3729cda0.chunk.css",
-  "static/js/1.af97aced.chunk.js": "/LIM017-burger-queen/static/js/1.af97aced.chunk.js",
-  "static/js/1.af97aced.chunk.js.map": "/LIM017-burger-queen/static/js/1.af97aced.chunk.js.map",
+  "static/js/1.65b0da13.chunk.js": "/LIM017-burger-queen/static/js/1.65b0da13.chunk.js",
+  "static/js/1.65b0da13.chunk.js.map": "/LIM017-burger-queen/static/js/1.65b0da13.chunk.js.map",
   "runtime~main.js": "/LIM017-burger-queen/static/js/runtime~main.d28c6292.js",
   "runtime~main.js.map": "/LIM017-burger-queen/static/js/runtime~main.d28c6292.js.map",
   "static/media/font1.png": "/LIM017-burger-queen/static/media/font1.32ce6b06.png",
@@ -17,6 +17,6 @@
   "static/css/1.3729cda0.chunk.css.map": "/LIM017-burger-queen/static/css/1.3729cda0.chunk.css.map",
   "static/css/main.2e25eb93.chunk.css.map": "/LIM017-burger-queen/static/css/main.2e25eb93.chunk.css.map",
   "index.html": "/LIM017-burger-queen/index.html",
-  "precache-manifest.a86bda33f99d4112ed906d06a6751c1e.js": "/LIM017-burger-queen/precache-manifest.a86bda33f99d4112ed906d06a6751c1e.js",
+  "precache-manifest.baef64ecf5a31d6c3297498ec792e1a0.js": "/LIM017-burger-queen/precache-manifest.baef64ecf5a31d6c3297498ec792e1a0.js",
   "service-worker.js": "/LIM017-burger-queen/service-worker.js"
 }
