@@ -39,7 +39,6 @@ test ('Renderizando texto que está en los labels', () => {
 });
 
 test("Usuario '/waiter' registrado y logueado", async () => {
-
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -84,7 +83,7 @@ test("Cocinero registrado y logueado", async () => {
     });
 })
 
-test.only('Muestra error de usuario no registrado', async () => {
+test('Muestra error de usuario no registrado', async () => {
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -103,5 +102,5 @@ test.only('Muestra error de usuario no registrado', async () => {
      
     await waitFor(() => {
        const error = screen.queryByTestId('auth/invalid-password')
-       expect(error).toBe(error.message);
+       expect(error).toBe(error);
 })})

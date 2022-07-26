@@ -8,7 +8,7 @@ export function Welcome() {
   const { user } = useAuth()
   console.log(user)
   return (
-      <div className= {styles.containerWelcome}>
+      <div className= {styles.containerWelcome} data-testid='containerWelcome'>
         <img className= {styles.imageTitle}
         src={require('../../img/font1.png')}
         alt='Rico burger'/>

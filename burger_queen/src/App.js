@@ -6,7 +6,6 @@ import { Login } from './components/Login/Login';
 import  Kitchen  from './components/KitchenView/Kitchen';
 import OrdersReady from './components/WaiterView/OrdersReady'
 import { AuthProvider } from './context/authContext';
-import {PrivateRoute} from './components/PrivateRoute'
 import "./App.css";
 
 export const LocationDisplay = () => {

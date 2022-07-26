@@ -43,7 +43,7 @@ export function Login() {
   <Carrousel/>
   <div id={styles.formLogin}>
   <form id={styles.formInputs}>
-  <img id={styles.formImgLogo} src={require('../../img/font2.png')} />
+  <img id={styles.formImgLogo} src={require('../../img/font2.png')} alt="Logo" />
   <div id={styles.title} className='p-3 mb-2 fw-bold text-white'><h4 className={styles.hTitle}>Ingreso de personal autorizado</h4></div>
   <label htmlFor='email' className={styles.formLabel}>Correo electrónico</label>
   <input type='email' name='email' className='form-control' id={styles.email} placeholder='juatha88@gmail.com' onChange={handleChange}/>
