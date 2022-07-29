@@ -4,7 +4,7 @@ import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import { render, screen, waitFor, fireEvent } from '@testing-library/react';
 import { Login }  from './Login';
-import { AuthProvider, useAuth } from '../../context/authContext.js';
+import { AuthProvider } from '../../context/authContext.js';
 import MutationObserver from 'mutation-observer';
 global.MutationObserver = MutationObserver
 

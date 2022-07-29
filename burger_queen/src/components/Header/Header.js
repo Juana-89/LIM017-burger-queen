@@ -14,6 +14,7 @@ function Header()  {
     const signOut = () => {
         logout()
         .then(() => 
+        // eslint-disable-next-line
         { {setTimeout(function() { navigate('/login')},1200)};
         sessionStorage.clear();})
         Swal.fire({
