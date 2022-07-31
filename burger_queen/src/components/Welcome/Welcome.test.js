@@ -10,7 +10,7 @@ test('Renderizando contenido del div principal de Welcome', async () => {
     const history = createMemoryHistory()
     render(
     <AuthProvider>
-    <BrowserRouter  history={history.location} navigator={history}>
+    <BrowserRouter history={history.location} navigator={history}>
     <Welcome />
     </BrowserRouter>
     </AuthProvider>

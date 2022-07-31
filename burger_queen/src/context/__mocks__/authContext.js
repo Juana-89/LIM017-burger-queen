@@ -9,7 +9,8 @@ export const useAuth = function() {
   return {
     login: () => {
       return Promise.resolve();
-    }
+    },
+    logout: () => {return Promise.resolve()}
   };
 };
 export const navigate = function({ useNavigate }) {
@@ -19,7 +20,7 @@ export const navigate = function({ useNavigate }) {
 export function AuthProvider({ children }) {
   const login = (email, password) => {
     console.log(email, password,'funcionaaaaaaa')
-    if(email==="juatha88@gmail.com" && password==="burgerqueen"){
+    if(email==="juatha88@gmail.com" && password === "burgerqueen"){
       return Promise.resolve({
         user: {
           email: "correo@juatha88.com",
@@ -32,6 +33,7 @@ export function AuthProvider({ children }) {
     }
 
   };
+  
   return (
     <AuthContext.Provider value={{ login }}>{children}</AuthContext.Provider>
   );

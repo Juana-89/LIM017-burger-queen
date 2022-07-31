@@ -4,7 +4,7 @@ import {render, screen} from '@testing-library/react';
 import { LocationDisplay } from './app';
 import { MemoryRouter } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from './context/authContext.js';
+import { AuthProvider } from '../context/authContext.js';
 import App from './App';
 
 test('Renderizando un componente que usa useLocation', () => {
