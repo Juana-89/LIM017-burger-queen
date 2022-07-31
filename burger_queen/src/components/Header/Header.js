@@ -14,8 +14,7 @@ function Header()  {
     const signOut = () => {
         logout()
         .then(() => 
-        // eslint-disable-next-line
-        { {setTimeout(function() { navigate('/login')},1200)};
+        { {setTimeout(function() { navigate('/')},1200)};
         sessionStorage.clear();})
         Swal.fire({
             title: '<b>Cerrando sesión</b>',
@@ -31,10 +30,10 @@ function Header()  {
           })
     }
     return (
-    <div id={styles.divBtnHeader}>
+    <div id={styles.divBtnHeader}  data-testid='containerHeader'>
     <img className= {styles.imgLogo} src={logo} alt="Logo"/>
     <h3 className={styles.title}>TOMA DE PEDIDOS</h3>
-    <button id={styles.btnLogout} className='btn btn-danger' onClick={signOut}><i id={styles.icoOff} className='icon-off'></i> Cerrar sesión</button>
+    <button id={styles.btnLogout} className='btn btn-danger' data-testid='btnLogout' onClick={signOut}><i id={styles.icoOff} className='icon-off'></i> Cerrar sesión</button>
     </div>
     )
 };

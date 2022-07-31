@@ -5,7 +5,7 @@
 body {
     font-size: 25px;
     /* background: linear-gradient(to top, rgb(10, 10, 10)40%, rgb(77, 66, 66)60%); */
-    background-image: url('../src/img/fondo1.png');
+    background-image: url('../../src/img/fondo1.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
