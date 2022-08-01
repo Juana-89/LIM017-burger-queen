@@ -57,7 +57,7 @@ test("Usuario '/waiter' registrado y logueado", async () => {
 
     await waitFor(() => {
         expect(history.location.pathname).toBe("/waiter");
-    });
+    })
 });
 
 test("Cocinero registrado y logueado", async () => {
@@ -80,8 +80,8 @@ test("Cocinero registrado y logueado", async () => {
 
     await waitFor(() => {
         expect(history.location.pathname).toBe("/kitchen");
-    });
-})
+    })
+});
 
 test('Muestra error de usuario no registrado', async () => {
     const history = createMemoryHistory();
@@ -103,4 +103,5 @@ test('Muestra error de usuario no registrado', async () => {
     await waitFor(() => {
        const error = screen.queryByTestId('auth/invalid-password')
        expect(error).toBe(error);
-})})
+    })
+});
