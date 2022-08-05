@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/WaiterView/OrderReady.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/components/WaiterView</a> OrderReady.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { useState, useEffect } from "react";</span>
+<span class="cstat-no" title="statement not covered" >import Header from './Header';</span>
+<span class="cstat-no" title="statement not covered" >import { Link } from "react-router-dom";</span>
+<span class="cstat-no" title="statement not covered" >import { db } from "../../firebase/config.js";</span>
+<span class="cstat-no" title="statement not covered" >import { collection, updateDoc, doc, orderBy, onSnapshot, query } from "firebase/firestore";</span>
+&nbsp;
+export default function <span class="fstat-no" title="function not covered" >Kitchen() <span class="cstat-no" title="statement not covered" >{</span></span>
+  const [orders, setOrders] = <span class="cstat-no" title="statement not covered" >useState([]);</span>
+  
+&nbsp;
+  const updateOrder = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async (</span>id, status) =&gt; {</span>
+    const orderDoc = <span class="cstat-no" title="statement not covered" >doc(db, "orders", id);</span>
+    const newFields = <span class="cstat-no" title="statement not covered" >{ status: "Delivered" };</span>
+<span class="cstat-no" title="statement not covered" >    await updateDoc(orderDoc, newFields);</span>
+<span class="cstat-no" title="statement not covered" >    console.log(newFields);</span>
+  };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  useEffect(<span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+    const ordersCollectionRef = <span class="cstat-no" title="statement not covered" >collection(db, "orders");</span>
+    const q = <span class="cstat-no" title="statement not covered" >query(ordersCollectionRef, orderBy("created", "desc"));</span>
+  
+  const getOrders = <span class="cstat-no" title="statement not covered" >onSnapshot(q,(<span class="fstat-no" title="function not covered" >snapshot) =&gt;</span></span>
+<span class="cstat-no" title="statement not covered" >  setOrders(snapshot.docs.map(<span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >doc) =&gt; ({ ...doc.data(), id: doc.id })))</span></span></span>
+  );
+<span class="cstat-no" title="statement not covered" >  return getOrders</span>
+  }, []);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  console.log(orders);</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;div&gt;
+      &lt;header className="menuUp"&gt;
+        &lt;Header /&gt;
+        &lt;h1 className="menuKitchen"&gt;Orders ready to serve&lt;/h1&gt;
+      &lt;/header&gt;
+      &lt;div className="ordersContainer"&gt;
+        {orders.length !== 0 &amp;&amp;
+          orders.map((<span class="fstat-no" title="function not covered" >order) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            return (</span>
+              &lt;div className="orderKitchen"&gt;
+                &lt;p&gt; Customer: {order.Customer} &lt;/p&gt;
+                {order.Order.map((<span class="fstat-no" title="function not covered" >element) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                  return (</span>
+                    &lt;ul&gt;
+                      {" "}
+                      &lt;li&gt;
+                        {element.qty} {element.name}
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  );
+                })}
+                &lt;p&gt;Status: {order.status}&lt;/p&gt;
+                &lt;button
+                  type="button"
+                  className="btnReady"
+                  onClick={<span class="fstat-no" title="function not covered" >() =&gt; </span>{
+<span class="cstat-no" title="statement not covered" >                    updateOrder(order.id, order.status);</span>
+                  }}
+                &gt;
+                  Delivered
+                &lt;/button&gt;
+              &lt;/div&gt;
+            );
+          })}
+      &lt;/div&gt;
+      &lt;div className="back ready"&gt;
+      &lt;Link to="/" className="returnbtn"&gt;
+        Return
+      &lt;/Link&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Aug 04 2022 21:18:50 GMT-0500 (hora estándar de Perú)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>
