@@ -24,4 +24,4 @@ test ('Probando función login', async() => {
     await waitFor(() => {
     expect(signInWithEmailAndPassword).toHaveBeenCalled();
      })
-    });
+});
