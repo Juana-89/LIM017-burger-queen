@@ -22,7 +22,7 @@ test ('Renderizando botón de logout', () => {
     expect(containerWelcome).toBeInTheDocument();
 });
 
-test.only('Debería de retornar al componente de carga', async () => {
+test ('Debería de retornar al componente de carga', async () => {
     const history = createMemoryHistory();
     render(
     <AuthProvider>
@@ -36,4 +36,4 @@ test.only('Debería de retornar al componente de carga', async () => {
     await waitFor(() => {
     expect(history.location.pathname).toBe('/');
     })
-})
+});
