@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import { render, screen, waitFor, fireEvent } from '@testing-library/react';
-import { Login }  from './Login';
+import { Login } from './Login';
 import { AuthProvider } from '../../context/authContext.js';
 import MutationObserver from 'mutation-observer';
 global.MutationObserver = MutationObserver
@@ -57,7 +57,7 @@ test("Usuario '/waiter' registrado y logueado", async () => {
 
     await waitFor(() => {
         expect(history.location.pathname).toBe("/waiter");
-    });
+    })
 });
 
 test("Cocinero registrado y logueado", async () => {
@@ -80,8 +80,8 @@ test("Cocinero registrado y logueado", async () => {
 
     await waitFor(() => {
         expect(history.location.pathname).toBe("/kitchen");
-    });
-})
+    })
+});
 
 test('Muestra error de usuario no registrado', async () => {
     const history = createMemoryHistory();
@@ -103,4 +103,5 @@ test('Muestra error de usuario no registrado', async () => {
     await waitFor(() => {
        const error = screen.queryByTestId('auth/invalid-password')
        expect(error).toBe(error);
-})})
+    })
+});

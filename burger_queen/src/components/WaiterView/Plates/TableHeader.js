@@ -3,7 +3,7 @@ import styles from './TableHeader.module.css';
 
 function TableHeader () {
     return(
-    <thead>
+    <thead data-testid="thHeader">
     <tr id={styles.trHeaderTable}>
     <th className={styles.thItem}>Item</th>
     <th className="quantity">Cantidad</th>

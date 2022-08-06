@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../../../firebase/config.js";
 import TableHeader  from './TableHeader';
@@ -23,7 +23,6 @@ const PlatesSelect = (props) => {
       status: 'Pendiente',
       created: Timestamp.fromDate(new Date()),
     });
-    console.log();
     Swal.fire({
       position: 'bottom-end',
       title: '<b>Orden enviada</b>',
@@ -35,12 +34,12 @@ const PlatesSelect = (props) => {
       toast: true,
     })
   }
-catch (error) { throw new Error (error)}
+catch (error) { throw new Error (error) }
 } ;
 
   return (
     <>
-      <div className={styles.divSelectItemByCustomer}>
+      <div className={styles.divSelectItemByCustomer} data-testid="containerPlates">
       <table id={styles.tableSelectItem} className="table table-striped">
       <TableHeader />
       <tbody>
