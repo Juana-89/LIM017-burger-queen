@@ -49,7 +49,7 @@ export function Login() {
   <input type='email' name='email' className='form-control' id={styles.email} placeholder='juatha88@gmail.com' onChange={handleChange}/>
   <label htmlFor='password' className={styles.formLabel}>Contraseña</label>
   <input type='password' name='password' className='form-control' id={styles.password} placeholder='burgerqueen' onChange={handleChange} />
-  <button type='submit' className='btn' id={styles.btnSubmit} onClick={handleSubmit}>Ingresar</button>
+  <button type='submit' className='btn' id={styles.btnSubmit} onClick={handleSubmit} data-testid={'btnSubmit'}>Ingresar</button>
   <div id={styles.alertError}>{error && <p>{error}</p>}</div>
   </form>
   </div>

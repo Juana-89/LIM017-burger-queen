@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/Login/Login.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/components/Login</a> Login.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { useState } from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import { useAuth } from '../../context/authContext'</span>
+<span class="cstat-no" title="statement not covered" >import { useNavigate } from 'react-router-dom';</span>
+<span class="cstat-no" title="statement not covered" >import Carrousel from './Carrousel';</span>
+<span class="cstat-no" title="statement not covered" >import 'bootstrap/dist/css/bootstrap.min.css';</span>
+<span class="cstat-no" title="statement not covered" >import styles from './Login.module.css';</span>
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >Login() <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span></span>
+  const [user, setUser] = <span class="cstat-no" title="statement not covered" >useState({</span>
+    email: '',
+    password: '',
+  });
+&nbsp;
+  // Exportando login
+  const { login } = <span class="cstat-no" title="statement not covered" >useAuth();</span>
+  const navigate = <span class="cstat-no" title="statement not covered" >useNavigate();</span>
+  const [error, setError] = <span class="cstat-no" title="statement not covered" >useState('');</span>
+&nbsp;
+  // Actualizar estado
+  const handleChange = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span> target: { name, value } }) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >  setUser({...user, [name]: value});</span>
+&nbsp;
+  const handleSubmit = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async(</span>e) =&gt; {</span>
+    const emailWaiter = <span class="cstat-no" title="statement not covered" >'waiter@burguer-queen.com';</span>
+    const emailKitchen = <span class="cstat-no" title="statement not covered" >'cook_boss@burguer-queen.com';</span>
+    
+<span class="cstat-no" title="statement not covered" >    e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >    try{</span>
+<span class="cstat-no" title="statement not covered" >      if(user.email === emailWaiter){</span>
+<span class="cstat-no" title="statement not covered" >      await login(user.email, user.password);</span>
+<span class="cstat-no" title="statement not covered" >      navigate('/waiter')</span>
+      }else <span class="cstat-no" title="statement not covered" >if(user.email === emailKitchen){</span>
+<span class="cstat-no" title="statement not covered" >          await login(user.email, user.password);</span>
+<span class="cstat-no" title="statement not covered" >          navigate('/kitchen')</span>
+      }
+      } catch (error) {
+<span class="cstat-no" title="statement not covered" >      setError(error.message);</span>
+    }
+ };
+&nbsp;
+<span class="cstat-no" title="statement not covered" > return (</span>
+  &lt;div className={styles.containerLogin}&gt;
+  &lt;Carrousel/&gt;
+  &lt;div id={styles.formLogin}&gt;
+  &lt;form id={styles.formInputs}&gt;
+  &lt;img id={styles.formImgLogo} src={require('../../img/font2.png')} alt="Logo" /&gt;
+  &lt;div id={styles.title} className='p-3 mb-2 fw-bold text-white'&gt;&lt;h4 className={styles.hTitle}&gt;Ingreso de personal autorizado&lt;/h4&gt;&lt;/div&gt;
+  &lt;label htmlFor='email' className={styles.formLabel}&gt;Correo electrónico&lt;/label&gt;
+  &lt;input type='email' name='email' className='form-control' id={styles.email} placeholder='juatha88@gmail.com' onChange={handleChange}/&gt;
+  &lt;label htmlFor='password' className={styles.formLabel}&gt;Contraseña&lt;/label&gt;
+  &lt;input type='password' name='password' className='form-control' id={styles.password} placeholder='burgerqueen' onChange={handleChange} /&gt;
+  &lt;button type='submit' className='btn' id={styles.btnSubmit} onClick={handleSubmit} data-testid={'btnSubmit'}&gt;Ingresar&lt;/button&gt;
+  &lt;div id={styles.alertError}&gt;{error &amp;&amp; &lt;p&gt;{error}&lt;/p&gt;}&lt;/div&gt;
+  &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+)
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Aug 04 2022 21:18:50 GMT-0500 (hora estándar de Perú)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>

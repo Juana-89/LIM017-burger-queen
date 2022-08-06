@@ -22,7 +22,7 @@ test ('Renderizando botón de logout', () => {
     expect(containerWelcome).toBeInTheDocument();
 });
 
-test ('Debería de retornar al componente login', async () => {
+test ('Debería de retornar al componente de carga', async () => {
     const history = createMemoryHistory();
     render(
     <AuthProvider>

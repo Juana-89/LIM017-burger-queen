@@ -1,4 +1,5 @@
 import React from 'react';
+import '@testing-library/jest-dom';
 import styles from './TableHeader.module.css';
 
 function TableHeader () {
@@ -6,11 +7,12 @@ function TableHeader () {
     <thead data-testid="thHeader">
     <tr id={styles.trHeaderTable}>
     <th className={styles.thItem}>Item</th>
-    <th className="quantity">Cantidad</th>
-    <th className="price">Precio</th>
-    <th className="num"></th>
+    <th className='quantity'>Cantidad</th>
+    <th className='price'>Precio</th>
+    <th className='num'></th>
     </tr>
     </thead>
     )
 };
+
 export default TableHeader;
