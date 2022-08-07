@@ -9,25 +9,26 @@
 * [5. Resultado final](#5-resultado-final)
 * [6. Herramientas usadas](#6-herramientas-usadas)
 * [7. Autoras](#7-autoras)
+
 ## **1. Descripción del proyecto**
 
-<center><img src='https://i.ibb.co/B65bktf/font1.png' width='40%'/></center><br><br>
+<p align="center"><img src='https://i.ibb.co/B65bktf/font1.png' width='40%'/></p><br><br>
 
-<p style="text-align: justify;">
+<p align="justify">
 Burger queen es un aplicativo que ayudará a un pequeño restaurante de hamburguesas para la toma de pedidos y que posteriormente se envié al sistema integrado del área de la cocina mediante la conexión a Firestore DB. El diseño realizado fue pensado de cara al usuario, la simplicidad con la que fue plasmada hace que la interacción con esta aplicación sea intuitiva y cómoda. Esta página está pensada para un NestHub, por lo tanto, las medidas usadas para esta PWA son de 1024 x 600 pixeles. A continuación, la siguiente información servirá para tener libre acceso al programa Burger queen:
 </p>
 
-<center>
+<p align="center">
 
 | Usuario                      | Contraseña    |
 |------------------------------|---------------|
 | waiter@burguer-queen.com     |   111111      |
 | cook_boss@burguer-queen.com  |   111111      |
-</center>
+</p>
 
 ## **2. Funcionamiento**
 
-<p style="text-align: justify;">Lo primero que se mostrará es un loader, que es un cargador de todos los componentes integrados a esta PWA para que su ejecución se dé con éxito en la memoria del sistema. Luego mostrará la vista del login donde se tiene 2 únicas maneras con las que puede ingresar el mesero y el jefe de cocina.
+<p align="justify">Lo primero que se mostrará es un loader, que es un cargador de todos los componentes integrados a esta PWA para que su ejecución se dé con éxito en la memoria del sistema. Luego mostrará la vista del login donde se tiene 2 únicas maneras con las que puede ingresar el mesero y el jefe de cocina.
 Si el mesero coloca sus credenciales correctas, podrá visualizar el menú de la casa con sus precios respectivos y podrá adicionar o disminuir los productos según sea el caso. También podrá ver el precio unitario y el total para brindar esta información a los clientes, una vez que esté listo la solicitud, podrá enviar el detalle del pedido al área de Cocina y también podrá visualizar del estado de estos para que sean entregados a los comensales.
 Si el jefe de cocina ingresa al aplicativo, podrá ver las órdenes que están pendientes para su preparación y atenderlos.</p>
 
@@ -112,21 +113,21 @@ Yo como mesero quiero ver los pedidos que están preparados para entregarlos rá
 
 **Prototipos de alta fidelidad**
 
-<center><img src='https://i.ibb.co/9VrY21m/Logo1.jpg' width='50%'>
+<p align="center"><img src='https://i.ibb.co/9VrY21m/Logo1.jpg' width='50%'>
 
 <img src='https://i.ibb.co/nznN1G2/Logo2.jpg' width='50%'>
 
 <img src='https://i.ibb.co/KhTGCbf/Logo3.jpg' width='50%'>
 
-</center>
+</p>
 
 ## **5. Resultado final**
 
 #### **Vista del mesero**
-<center><img src='https://i.ibb.co/3vdF9nb/View1.gif' width='50%'></center><br><br>
+<p align="center"><img src='https://i.ibb.co/3vdF9nb/View1.gif' width='50%'></p><br><br>
 
 #### **Vista del cocinero**
-<center><img src='https://i.ibb.co/pyBYKPY/cook.gif' width='50%'></center><br><br>
+<p align="center"><img src='https://i.ibb.co/pyBYKPY/cook.gif' width='50%'></p><br><br>
 
 ## **6. Herramientas usadas**
 * Figma
@@ -138,7 +139,7 @@ Yo como mesero quiero ver los pedidos que están preparados para entregarlos rá
 * Jest JS
 * GitHub
 
-## **6. Herramientas usadas**
+## **7. Autoras**
 
 * [Juana Llanje](https://github.com/Juana-89)
   
