@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/Login/Carrousel.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/components/Login</a> Carrousel.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import 'bootstrap/dist/css/bootstrap.min.css';</span>
+<span class="cstat-no" title="statement not covered" >import styles from './Login.module.css';</span>
+&nbsp;
+const image1 = <span class="cstat-no" title="statement not covered" >require('../../img/burger1.jpg');</span>
+const image2 = <span class="cstat-no" title="statement not covered" >require('../../img/burger2.jpg');</span>
+const image3 = <span class="cstat-no" title="statement not covered" >require('../../img/burger3.jpg');</span>
+&nbsp;
+const Carrousel = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =&gt; </span>{</span>
+<span class="cstat-no" title="statement not covered" >    return(</span>
+    &lt;div id={styles.carouselImages}&gt;
+    &lt;div id={styles.carouselBurger} className='carousel carousel-dark slide' data-bs-ride='carousel'&gt;
+    &lt;div className='carousel-indicators'&gt;
+    &lt;button type='button' data-bs-target='#carouselBurger' data-bs-slide-to='0' className='active' aria-current='true' aria-label='Slide 1'&gt;&lt;/button&gt;
+    &lt;button type='button' data-bs-target='#carouselBurger' data-bs-slide-to='1' aria-label='Slide 2'&gt;&lt;/button&gt;
+    &lt;button type='button' data-bs-target='#carouselBurger' data-bs-slide-to='2' aria-label='Slide 3'&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div className='carousel-inner'&gt;
+    &lt;div className='carousel-item active' data-bs-interval='1000'&gt;&lt;img src={image1} id='img1' className='d-block' alt='Hamburguesa clásica' /&gt;&lt;/div&gt;
+    &lt;div className='carousel-item' data-bs-interval='2000'&gt;&lt;img src={image2} id='img2' className='d-block' alt='Hamburguesa doble' /&gt;&lt;/div&gt;
+    &lt;div className='carousel-item' data-bs-interval='3000'&gt;&lt;img src={image3} id='img3' className='d-block' alt='Hamburguesa triple' /&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div className='btns-carousel'&gt;
+    &lt;button className='carousel-control-prev' type='button' data-bs-target='#carouselBurger' data-bs-slide='prev'&gt;
+    &lt;span className='carousel-control-prev-icon' aria-hidden='true'&gt;&lt;/span&gt;
+    &lt;span className='visually-hidden'&gt;Previous&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button className='carousel-control-next' type='button' data-bs-target='#carouselBurger' data-bs-slide='next'&gt;
+    &lt;span className='carousel-control-next-icon' aria-hidden='true'&gt;&lt;/span&gt;
+    &lt;span className='visually-hidden'&gt;Next&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    )
+};
+&nbsp;
+export default Carrousel</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Aug 04 2022 21:18:50 GMT-0500 (hora estándar de Perú)
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>
