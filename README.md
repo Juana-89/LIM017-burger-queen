@@ -113,21 +113,26 @@ Yo como mesero quiero ver los pedidos que están preparados para entregarlos rá
 
 **Prototipos de alta fidelidad**
 
-<p align="center"><img src='https://i.ibb.co/9VrY21m/Logo1.jpg' width='50%'>
-
-<img src='https://i.ibb.co/nznN1G2/Logo2.jpg' width='50%'>
-
-<img src='https://i.ibb.co/KhTGCbf/Logo3.jpg' width='50%'>
+<p align="center">
+<img src='https://i.ibb.co/9VrY21m/Logo1.jpg' width='50%'></p>
+<p align="center">
+<img src='https://i.ibb.co/nznN1G2/Logo2.jpg' width='50%'></p>
+<p align="center">
+<img src='https://i.ibb.co/KhTGCbf/Logo3.jpg' width='50%'></p>
 
 </p>
 
 ## **5. Resultado final**
 
 #### **Vista del mesero**
-<p align="center"><img src='https://i.ibb.co/3vdF9nb/View1.gif' width='50%'></p><br><br>
+
+<p align="center">
+<img src='https://i.ibb.co/3vdF9nb/View1.gif' width='50%'></p><br><br>
 
 #### **Vista del cocinero**
-<p align="center"><img src='https://i.ibb.co/pyBYKPY/cook.gif' width='50%'></p><br><br>
+
+<p align="center">
+<img src='https://i.ibb.co/pyBYKPY/cook.gif' width='50%'></p><br><br>
 
 ## **6. Herramientas usadas**
 * Figma
